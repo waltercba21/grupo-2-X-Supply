@@ -6,6 +6,7 @@ AUDIENCIA: Nuestro publico se centra en jóvenes adultos que quieren comenzar a 
 ENFOQUE:
 
 Nuestro principal objetivo será estar a disposicion bajo cualquier requisito que quiera el usuario. en el caso de que quieran proteinas, habra una seccion esclusiva en la cual se encontraran desde las mas baratas hasta la mas cara, enseñando lo que aporta cada una. por otro lado puede que quieran mas de un producto, entonces adherimos el sistema de carrito, en el cual ellos tengan la posibilidad de agrupar productos armándose sus combos y pedir todo directamente.
+
 INTEGRANTES DEL GRUPO 2:
 
 1. Rene Paz // conocedor de Front End.
@@ -14,6 +15,7 @@ INTEGRANTES DEL GRUPO 2:
 4. Bruno Doliani // Conocedor de mercado y solucionador de problemas.
 
 REFERENCIAS: Por qué fueron elegidos.
+
 https://super-nutricion.com.ar/ -- interfaz sencilla y facil de manejar, la utilizaremos como idea principal de nuestra pagina
 
 https://torontonatural.com.ar/ -- Buena implementación de las imágenes en la pagina y es muy amigable al cliente.
