@@ -1,11 +1,8 @@
-NOSOTROS:
+NOSOTROS: X-Suply está enfocada en la venta de suplementos deportivos-dietarios. La oferta será variada en cuanto a marcas y presentaciones.
 
-X-Suply esta enfocada a la venta de suplementos deportivos-dietarios. estos seran de todas las marcas y tamaños.
-AUDIENCIA: Nuestro publico se centra en jóvenes adultos que quieren comenzar a mejorar su estado fisico ya sea por temas de salud o mismo temas deportivos. para enfocarnos en dicho publico, ofreceremos una gran variedad de productos para que se puedan adaptar a las necesidades de cada persona que elija comprar en nuestra web. el registro recaudará el nombre, apellido, direccion de entrega y mail del usuario.
+AUDIENCIA: Nuestro público se centra en jóvenes/adultos que quieran mejorar su estado físico ya sea por temas de salud o mismo temas deportivos. Para enfocarnos en dicho público, ofreceremos una gran variedad de productos que se adapten a las necesidades de cada persona.
 
-ENFOQUE:
-
-Nuestro principal objetivo será estar a disposicion bajo cualquier requisito que quiera el usuario. en el caso de que quieran proteinas, habra una seccion esclusiva en la cual se encontraran desde las mas baratas hasta la mas cara, enseñando lo que aporta cada una. por otro lado puede que quieran mas de un producto, entonces adherimos el sistema de carrito, en el cual ellos tengan la posibilidad de agrupar productos armándose sus combos y pedir todo directamente.
+ENFOQUE: Nuestro principal objetivo será la satisfacción de las necesidades el usuario. En el caso de que quieran proteínas, habrá una sección exclusiva en la cual se encontraran desde las más baratas hasta las más caras, enseñando lo que aporta cada una. Por otro lado puede que quieran más de un producto, entonces adherimos el sistema de carrito, en el cual ellos tengan la posibilidad de agrupar productos armándose sus combos y pedir todo directamente.
 
 INTEGRANTES DEL GRUPO 2:
 
