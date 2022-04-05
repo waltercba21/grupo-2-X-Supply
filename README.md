@@ -1,8 +1,13 @@
-NOSOTROS: X-Supply está enfocada en la venta de suplementos deportivos-dietarios. La oferta será variada en cuanto a marcas y presentaciones.
+NOSOTROS:
 
-AUDIENCIA: Nuestro público se centra en jóvenes/adultos que quieran mejorar su estado físico ya sea por temas de salud o mismo temas deportivos. Para enfocarnos en dicho público, ofreceremos una gran variedad de productos que se adapten a las necesidades de cada persona.
+X-Suply esta enfocada a la venta de suplementos deportivos-dietarios. Estos seran de todas las marcas y tamaños.
 
-ENFOQUE: Nuestro principal objetivo será la satisfacción de las necesidades el usuario. En el caso de que quieran proteínas, habrá una sección exclusiva en la cual se encontraran desde las más baratas hasta las más caras, enseñando lo que aporta cada una. Por otro lado puede que quieran más de un producto, entonces adherimos el sistema de carrito, en el cual ellos tengan la posibilidad de agrupar productos armándose sus combos y pedir todo directamente.
+AUDIENCIA: Nuestro público se centra en jóvenes adultos que quieren comenzar a mejorar su estado fisico, ya sea por temas de salud o mismo temas deportivos. Para enfocarnos en dicho público, ofreceremos una gran variedad de productos para que se puedan adaptar a las necesidades de cada persona. El registro recaudará el nombre, apellido, direccion de entrega y mail del usuario.
+
+ENFOQUE:
+
+Nuestro principal objetivo será estar a disposición bajo cualquier requisito que quiera el usuario.
+En el caso de que quieran proteinas, habra una sección exlusiva en la cual se encontraran desde las mas baratas hasta la mas cara, enseñando lo que aporta cada una. Por otro lado puede que quieran mas de un producto, entonces adherimos el sistema de carrito, en el cual el usuario tenga la posibilidad de agregar mas de un producto, pudiendo asi, armarse sus combos personalizados.
 
 INTEGRANTES DEL GRUPO 2:
 
@@ -23,6 +28,6 @@ https://www.muscleandstrength.com/ -- interfaz muy completa, ademas de vender su
 
 https://www.enasport.com/ -- interfaz amigable, buena maneja de alentar a que el cliente elija de buena manera el producto
 
-WIREFRAME: 
+WIREFRAME:
 
 https://miro.com/app/board/uXjVODUQNJc=/?invite_link_id=713171128729
