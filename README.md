@@ -1,25 +1,30 @@
 ![Logo](https://user-images.githubusercontent.com/100803671/161872447-fc827daf-f354-400a-ad87-ebd101acdedc.png)
 
-
-*NOSOTROS:*
+_NOSOTROS:_
 
 Nuestro negocio está enfocado en la venta de suplementos deportivos-dietarios. La oferta será variada en cuanto a marcas y presentaciones.
 
-*AUDIENCIA:*
+_AUDIENCIA:_
 
 Nuestro público se centra en jóvenes/adultos que quieran mejorar su estado físico ya sea por temas de salud o mismo temas deportivos. Para enfocarnos en dicho público, ofreceremos una gran variedad de productos que se adapten a las necesidades de cada persona.
 
-*ENFOQUE:*
+_ENFOQUE:_
 
-Nuestro principal objetivo será la satisfacción de las necesidades el usuario. En el caso de que quieran proteínas, habrá una sección exclusiva en la cual se encontraran desde las más baratas hasta las más caras, enseñando lo que aporta cada una. Por otro lado puede que quieran más de un producto, entonces adherimos el sistema de carrito, en el cual ellos tengan la posibilidad de agrupar productos armando un sólo pedido sus combos y pedir todo directamente.
+Nuestro principal objetivo será la satisfacción de las necesidades el usuario. En el caso de que quieran proteínas, habrá una sección exclusiva en la cual se encontraran desde las más baratas hasta las más caras, explicando lo que aporta cada una.
+Por otro lado, puede que quieran más de un producto, entonces adherimos el sistema de carrito.
+En el mismo, el usuario tendrá la posibilidad de agrupar productos, ya sea de manera unitaria o armando un sólo pedido con sus combos personalizados de articulos en el CARRITO DE COMPRAS.
+Tendrá la posibilidad de abonar con todos los medios de pagos bancarios (Tarjeta de Credito/Debito), transferencias, QR o efectivo.
+Posibilidad, de retiro en sucursal o envio, mediante correo o expreso a todo el Pais.
 
 ## INTEGRANTES DEL GRUPO 2:
+
 ```
 1. Rene Paz, 24 años, empleado administrativo, interesado en el frontend y en la experiencia de usuario. Hobbies: fotografía, cine.
 2. Walter Cordoba, 36 años, comerciante, me gusta todo lo relacionado con diseño, plataformas y avances tecnologicos. Hobbies: fútbol, viajes.
 3. Fernando Ruggiero, 35 años, contador público, interesado en back-end. Hobbies: fotografía, viajes, trekking.
 4. Bruno Doliani, 27 años, estudiante de contador público, trabajo en sector de contabilidad. Hobbies: gym, powerlifting, manga.
 ```
+
 ## PÁGINAS WEB DE REFERENCIA:
 
 https://super-nutricion.com.ar/ -- interfaz sencilla y fácil de manejar, la utilizaremos como idea principal de nuestra página
