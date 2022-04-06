@@ -32,6 +32,6 @@ https://www.muscleandstrength.com/ -- interfaz muy completa, además de vender s
 
 https://www.enasport.com/ -- interfaz amigable, buena manera de alentar a que el cliente elija de buena manera el producto
 
-WIREFRAME:
+## WIREFRAME:
 
 https://miro.com/app/board/uXjVODUQNJc=/?invite_link_id=713171128729
