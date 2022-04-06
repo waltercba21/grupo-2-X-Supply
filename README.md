@@ -1,24 +1,26 @@
-NOSOTROS:
+![Logo](https://user-images.githubusercontent.com/100803671/161872447-fc827daf-f354-400a-ad87-ebd101acdedc.png)
 
-X-Suply esta enfocada a la venta de suplementos deportivos-dietarios. Estos seran de todas las marcas y tamaños.
 
-AUDIENCIA: 
+*NOSOTROS:*
 
-Nuestro público se centra en jóvenes adultos que quieren comenzar a mejorar su estado fisico, ya sea por temas de salud o mismo temas deportivos. Para enfocarnos en dicho público, ofreceremos una gran variedad de productos para que se puedan adaptar a las necesidades de cada persona. El registro recaudará el nombre, apellido, direccion de entrega y mail del usuario.
+Nuestro negocio está enfocado en la venta de suplementos deportivos-dietarios. La oferta será variada en cuanto a marcas y presentaciones.
 
-ENFOQUE:
+*AUDIENCIA:*
 
-Nuestro principal objetivo será estar a disposición bajo cualquier requisito que quiera el usuario.
-En el caso de que quieran proteinas, habra una sección exlusiva en la cual se encontraran desde las mas baratas hasta la mas cara, enseñando lo que aporta cada una. Por otro lado puede que quieran mas de un producto, entonces adherimos el sistema de carrito, en el cual el usuario tenga la posibilidad de agregar mas de un producto, pudiendo asi, armarse sus combos personalizados.
+Nuestro público se centra en jóvenes/adultos que quieran mejorar su estado físico ya sea por temas de salud o mismo temas deportivos. Para enfocarnos en dicho público, ofreceremos una gran variedad de productos que se adapten a las necesidades de cada persona.
 
-INTEGRANTES DEL GRUPO 2:
+*ENFOQUE:*
 
-1. Rene Paz // conocedor de Front End.
-2. Walter Cordoba// Conocedor de mercado y solucionador de problemas.
-3. Fernando Ruggiero // Hábil en programacion
-4. Bruno Doliani // Conocedor de mercado y solucionador de problemas.
+Nuestro principal objetivo será la satisfacción de las necesidades el usuario. En el caso de que quieran proteínas, habrá una sección exclusiva en la cual se encontraran desde las más baratas hasta las más caras, enseñando lo que aporta cada una. Por otro lado puede que quieran más de un producto, entonces adherimos el sistema de carrito, en el cual ellos tengan la posibilidad de agrupar productos armando un sólo pedido sus combos y pedir todo directamente.
 
-REFERENCIAS: Por qué fueron elegidos.
+## INTEGRANTES DEL GRUPO 2:
+```
+1. Rene Paz, 24 años, empleado administrativo, interesado en el frontend y en la experiencia de usuario. Hobbies: fotografía, cine.
+2. Walter Cordoba, 36 años, comerciante, me gusta todo lo relacionado con diseño, plataformas y avances tecnologicos. Hobbies: fútbol, viajes.
+3. Fernando Ruggiero, 35 años, contador público, interesado en back-end. Hobbies: fotografía, viajes, trekking.
+4. Bruno Doliani, 27 años, estudiante de contador público, trabajo en sector de contabilidad. Hobbies: gym, powerlifting, manga.
+```
+## PÁGINAS WEB DE REFERENCIA:
 
 https://super-nutricion.com.ar/ -- interfaz sencilla y facil de manejar, la utilizaremos como idea principal de nuestra pagina
 
