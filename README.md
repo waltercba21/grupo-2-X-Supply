@@ -22,15 +22,15 @@ Nuestro principal objetivo será la satisfacción de las necesidades el usuario.
 ```
 ## PÁGINAS WEB DE REFERENCIA:
 
-https://super-nutricion.com.ar/ -- interfaz sencilla y facil de manejar, la utilizaremos como idea principal de nuestra pagina
+https://super-nutricion.com.ar/ -- interfaz sencilla y fácil de manejar, la utilizaremos como idea principal de nuestra página
 
-https://torontonatural.com.ar/ -- Buena implementación de las imágenes en la pagina y es muy amigable al cliente.
+https://torontonatural.com.ar/ -- buena utilización de las imágenes en la página y es muy amigable al cliente.
 
 http://www.mervicklab.com.ar/ -- interfaz amigable, buena distinción de productos.
 
-https://www.muscleandstrength.com/ -- interfaz muy completa, ademas de vender suplementos muestran articulos y mismo se puede usar el sistema de noticias nuevas para mostrar los productos nuevos añadidos.
+https://www.muscleandstrength.com/ -- interfaz muy completa, además de vender suplementos muestran artículos y mismo se puede usar el sistema de noticias nuevas para mostrar los productos nuevos añadidos.
 
-https://www.enasport.com/ -- interfaz amigable, buena maneja de alentar a que el cliente elija de buena manera el producto
+https://www.enasport.com/ -- interfaz amigable, buena manera de alentar a que el cliente elija de buena manera el producto
 
 WIREFRAME:
 
