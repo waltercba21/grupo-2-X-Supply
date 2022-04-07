@@ -1,0 +1,25 @@
+{
+  "name": "grupo-2-x-supply",
+  "version": "1.0.0",
+  "description": "![Logo](https://user-images.githubusercontent.com/100803671/161872447-fc827daf-f354-400a-ad87-ebd101acdedc.png)",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/waltercba21/grupo-2-X-Supply.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/waltercba21/grupo-2-X-Supply/issues"
+  },
+  "homepage": "https://github.com/waltercba21/grupo-2-X-Supply#readme",
+  "dependencies": {
+    "express": "^4.17.3",
+    "path": "^0.12.7",
+    "save": "^2.4.0"
+  }
+}
