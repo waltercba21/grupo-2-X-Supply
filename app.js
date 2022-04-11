@@ -30,6 +30,6 @@ app.get('/', (req, res) => {
     res.sendFile(path.resolve(__dirname, './views/register.html'));
  });
 
-
+//agrego este comentario solo para probar que funcione todo OK. 
 
 
