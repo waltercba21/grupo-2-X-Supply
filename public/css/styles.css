@@ -128,9 +128,10 @@ header div nav i {
 
 .container {
     margin-top: 10px;
-    background-color: #edf2f4;
+    background-color: #f1f1f1;
     
 }
+
 
 @media screen and (min-width: 992px) {
     .dropdown {
