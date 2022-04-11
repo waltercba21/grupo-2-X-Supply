@@ -1,17 +1,138 @@
 :root {
-    --Dark-blue: #2b2d42;
-    --Light-gray: #8D99AE;
-    --White: #edf2f4;
-    --Light-red: #ef233c;
-    --Red: #d90429;
+  --Dark-blue: #1d1e2c;
+  --Light-gray: #8d99ae;
+  --White: #ffffff;
+  --Light-red: #ef233c;
+  --Red: #d90429;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
+}
+
+.navbar {
+  background-color: var(--White);
+  opacity: 0.9;
+  padding: 0% 0% 0% 0% !important;
+}
+
+.navbar-nav {
+  justify-content: flex-start;
+  width: 100%;
+
+  padding-right: 7%;
+}
+
+.nav-link {
+  color: black !important;
+  font-size: 18px;
+  font-family: "Montserrat";
+  font-weight: 600;
+  display: inline-block;
+  position: relative;
+}
+
+.nav-link:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--Light-red);
+  transform-origin: bottom right;
+  transition: transform 0.15s ease-out;
+}
+
+.nav-link:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.dropdown .btn {
+  color: var(--Dark-blue) !important;
+  padding: 0% 0% 0% 0% !important;
+}
+
+.dropdown {
+  display: flex;
+  flex-direction: row;
+}
+
+.dropdown-toggle {
+  padding-bottom: 3px !important;
+  margin-right: 5px;
+}
+
+header div nav i {
+  font-size: 22px;
+  color: black !important;
+}
+
+.fa-shopping-cart {
+  padding-right: 5%;
+  font-size: 22px;
+}
+
+.dropdown-item {
+  color: var(--Dark-blue) !important;
+  font-family: "Montserrat" !important;
+}
+
+.carousel-inner img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.carousel img {
+  max-height: 45em;
+}
+
+.navbar-collapse {
+  z-index: 9;
+}
+
+.btn-light {
+  color: rgb(0, 0, 0) !important;
+  background-color: #ffffff !important;
+  border: 1px solid #ffffff;
+  padding: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600 !important;
+  border-radius: 0.5rem !important;
+}
+
+.carousel-caption {
+  margin-bottom: 10%;
+}
+
+.carousel-text {
+  font-family: "Versa", sans-serif;
+  font-weight: 600;
+
+  font-size: 210%;
+}
+
+@media screen and (min-width: 992px) {
+  .dropdown {
+    padding-right: 5%;
+  }
+  .fa-shopping-cart {
+    padding-top: 0px;
+    padding-left: 15px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .dropdown {
+    padding-bottom: 2%;
+  }
 }
