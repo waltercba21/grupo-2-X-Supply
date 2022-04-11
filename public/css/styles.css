@@ -14,6 +14,26 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
+    
+    
+
+}
+.bloque_registro{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    text-align: left;
+     
+}
+.product_img{
+    width: 40%;
+    padding-right: 250px;
+    
+}
+.registro{
+    width: 60%;
+    padding-left: 450px;
+    
 }
 
 
