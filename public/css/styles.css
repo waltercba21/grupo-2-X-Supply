@@ -126,6 +126,12 @@ header div nav i {
     font-size: 210%;
 }
 
+.container {
+    margin-top: 10px;
+    background-color: #edf2f4;
+    
+}
+
 @media screen and (min-width: 992px) {
     .dropdown {
         padding-right: 5%;
