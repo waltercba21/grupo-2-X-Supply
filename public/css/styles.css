@@ -16,6 +16,10 @@ body {
     font-family: "Montserrat", sans-serif;
 }
 
+h6{
+    font-family: "Montserrat", sans-serif;
+}
+
 .navbar {
     background-color: var(--White);
     opacity: 0.9;
@@ -131,10 +135,28 @@ header div nav i {
         padding-top: 1px;
         padding-left: 15px;
     }
+    
 }
 
 @media screen and (max-width: 992px) {
     .dropdown {
         padding-bottom: 2%;
     }
+
+    .info-container{
+        display: flex;
+        flex-direction: row!important;
+    }
 }
+
+  
+  .info{
+    border-right: 1px solid rgb(206, 206, 206);
+    
+  }
+  
+  .info-text{
+      color: #858585;
+      font-family: "Montserrat", sans-serif;
+  }
+  
