@@ -16,11 +16,12 @@
   <link href="http://fonts.cdnfonts.com/css/versa" rel="stylesheet" />
   <link rel="stylesheet" href="bootstrap.min.css">
   <title>LOGIN</title>
-  <style>
-    .bg{
-      background-image: url(images/foto1.jpg);
-      background-position: center center;
-    }
+ <style> 
+ .bg {
+    background-image: url(images/foto1.jpg);
+    background-position: center center;
+    background-size: cover;
+  } 
   </style>
 </head>
 
@@ -30,7 +31,7 @@
     <div class="head">
       <nav class="navbar navbar-expand-lg navbar-expand-lg navbar-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">
+          <a class="navbar-brand" href="index">
             <img class="logo" src="/images/logo.png" width="180" alt="LOGO" />
           </a>
 
@@ -41,10 +42,10 @@
           <!------------navbar-toggler------------>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-link" href="index.html">INICIO</a>
-              <a class="nav-link" href="Productos.html">PRODUCTOS</a>
-              <a class="nav-link" href="Recetas.html">RECETAS</a>
-              <a class="nav-link" href="Nosotros.html">NOSOTROS</a>
+              <a class="nav-link" href="index">INICIO</a>
+              <a class="nav-link" href="Productos">PRODUCTOS</a>
+              <a class="nav-link" href="Recetas">RECETAS</a>
+              <a class="nav-link" href="Nosotros">NOSOTROS</a>
 
               <!------------Menu usuario------------>
             </div>
@@ -54,8 +55,8 @@
                 <i class="fas fa-user"></i>
               </button>
               <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="login.html">Iniciar Sesion</a>
-                <a class="dropdown-item" href="register.html">Crear cuenta</a>
+                <a class="dropdown-item" href="login">Iniciar Sesion</a>
+                <a class="dropdown-item" href="register">Crear cuenta</a>
               </div>
               <i class="fas fa-shopping-cart"></i>
             </div>
@@ -67,14 +68,14 @@
 
   <!------------LOGIN------------> 
 
-    <div class="container rounded-3 shadow">
+    <div class="container rounded-3 shadow container-login">
       <div class="row">
         <div class="col bg"> 
 
         </div>
         <div class="col"> 
           <div class= "text-end">
-            <img src="images/logo.png" width="300" alt="">
+           
           </div> 
 
           <!---Saludo Inicial-->
@@ -102,14 +103,14 @@
             <!---Boton de INICIAR SESION-->
             
             <div class="d-grid">
-              <button type="submit" class="btn btn-primary">Iniciar Sesión </button>
+              <button type="submit" class="btn btn-dark">Iniciar Sesión </button>
             </div>
 
             <!---Si el usuario no tiene cuenta o perdio su contraseña-->
             
-            <div class="my-3">
-              <span>No tienes cuenta? <a href=""> Registrate</a></span> <br>
-              <span><a href=""> Recuperar Contraseña</a></span>
+            <div class="my-3 register-pass">
+              <span class="cuenta">No tienes cuenta? <a class="registrarte" href="" > Registrate</a></span> <br>
+              <span><a class= "recupero" href=""> Recuperar Contraseña</a></span>
 
             </div>
           </form>
@@ -117,7 +118,7 @@
         <!---LOGIN CON REDES SOCIALES-->
           <div class="container w-100 my-5">
             <div class="row text-center">
-              <div class="col-12">Iniciar Sesión</div>
+              <div class="col-12">Iniciar Sesión con</div>
             </div>
             <div class="row">
               <div class="col">
