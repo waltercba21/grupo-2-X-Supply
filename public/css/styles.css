@@ -132,6 +132,17 @@ header div nav i {
     
 }
 
+.info{
+    border-right: 1px solid rgb(206, 206, 206);
+    
+  }
+  
+  .info-text{
+      color: #858585;
+      font-family: "Montserrat", sans-serif;
+  }
+
+
 
 @media screen and (min-width: 992px) {
     .dropdown {
@@ -157,13 +168,5 @@ header div nav i {
 }
 
   
-  .info{
-    border-right: 1px solid rgb(206, 206, 206);
-    
-  }
-  
-  .info-text{
-      color: #858585;
-      font-family: "Montserrat", sans-serif;
-  }
+ 
   
