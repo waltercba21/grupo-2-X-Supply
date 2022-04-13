@@ -10,9 +10,6 @@ app.listen (3000, () => {
     console.log ("Puerto Activo")
 });
 
-app.get('/index', (req, res) => {
-   res.sendFile(path.join(__dirname, './views/index.html'));
-});
 
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, './views/index.html'));
@@ -23,11 +20,7 @@ app.get('/', (req, res) => {
 });
 
  app.get('/login', (req, res) => {
-<<<<<<< HEAD
-    res.sendFile(path.join(__dirname, '/views/login.html'));
-=======
     res.sendFile(path.join(__dirname, './views/login.html'));
->>>>>>> 576ca4bcdfc52a8ed8e6c2e8c120e4e45d9b8c6f
  });
 
  app.get('/productCart', (req, res) => {

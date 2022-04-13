@@ -16,7 +16,7 @@ body {
     font-family: "Montserrat", sans-serif;
 }
 
-h6{
+h6 {
     font-family: "Montserrat", sans-serif;
 }
 
@@ -125,49 +125,50 @@ header div nav i {
 
     font-size: 210%;
 }
-.bg{
+
+.bg {
     background-image: url(images/foto2.jpg);
     background-position: center center;
     background-size: cover;
-  }
+}
 
-.container-login{
+.container-login {
     margin-top: 10px;
-    background-color: #edf2f4;
+    background-color: #eeeeee;
     font-family: "Montserrat", sans-serif;
 }
 
-.register-pass .cuenta{
+.register-pass .cuenta {
     color: rgb(54, 53, 53);
-   
-    
+
+
 }
 
-.register-pass a{
+.register-pass a {
     text-decoration: none;
     color: #1d1e2c;
     font-weight: 600;
-   
+
 }
 
-.registrarte{
+.registrarte {
     padding-left: 10px;
 }
 
-.recupero{
-    font-size: 12px ;
-    
+.recupero {
+    font-size: 12px;
+
 }
 
-.info{
+.info {
     border-right: 1px solid rgb(206, 206, 206);
-    
-  }
-  
-  .info-text{
-      color: #858585;
-      font-family: "Montserrat", sans-serif;
-  }
+
+}
+
+.info-text {
+    color: #858585;
+    font-family: "Montserrat", sans-serif;
+}
 
 
 
@@ -180,7 +181,7 @@ header div nav i {
         padding-top: 1px;
         padding-left: 15px;
     }
-    
+
 }
 
 @media screen and (max-width: 992px) {
@@ -188,12 +189,8 @@ header div nav i {
         padding-bottom: 2%;
     }
 
-    .info-container{
+    .info-container {
         display: flex;
-        flex-direction: row!important;
+        flex-direction: row !important;
     }
 }
-
-  
- 
-  
