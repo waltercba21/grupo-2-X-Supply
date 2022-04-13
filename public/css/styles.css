@@ -13,7 +13,6 @@
 }
 
 body {
-<<<<<<< HEAD
     font-family: 'Montserrat', sans-serif;
     
     
@@ -21,26 +20,26 @@ body {
 }
 .bloque_registro{
     display: flex;
-    padding-right: 50px;
-    padding: 10px;
     text-align: left;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin:10%
     
 }
 .product_img{
-    width: 100%;
-    padding-right: 250px;
-    height: 80%;
+    
+    width: 65%;
+    
+   
 }
 .registro{
-    width: 60%;
-    height: 50%;
+    width: 100%;
+    height: 100%;
     background-color:#8d99ae ;
-   margin-right: 10px;
-   padding-right:50px;
-   padding-left: 10px;
-=======
+   display: flex;
+   justify-content: center;
+   padding-top: 2%;
+   padding-bottom: 2%;
     font-family: "Montserrat", sans-serif;
->>>>>>> b3ecebba474e1df4471bdd7e017bd8a40310930c
 }
 
 .navbar {
