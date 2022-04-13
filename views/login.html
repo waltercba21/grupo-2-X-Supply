@@ -14,15 +14,24 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
     integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
   <link href="http://fonts.cdnfonts.com/css/versa" rel="stylesheet" />
-  <title>X-SUPPLY</title>
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <title>LOGIN</title>
+ <style> 
+ .bg {
+    background-image: url(images/foto1.jpg);
+    background-position: center center;
+    background-size: cover;
+  } 
+  </style>
 </head>
 
-<body>
+<body> 
+ 
   <header class="sticky-top">
     <div class="head">
       <nav class="navbar navbar-expand-lg navbar-expand-lg navbar-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">
+          <a class="navbar-brand" href="index">
             <img class="logo" src="/images/logo.png" width="180" alt="LOGO" />
           </a>
 
@@ -33,10 +42,10 @@
           <!------------navbar-toggler------------>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-link" href="index.html">INICIO</a>
-              <a class="nav-link" href="Productos.html">PRODUCTOS</a>
-              <a class="nav-link" href="Recetas.html">RECETAS</a>
-              <a class="nav-link" href="Nosotros.html">NOSOTROS</a>
+              <a class="nav-link" href="index">INICIO</a>
+              <a class="nav-link" href="Productos">PRODUCTOS</a>
+              <a class="nav-link" href="Recetas">RECETAS</a>
+              <a class="nav-link" href="Nosotros">NOSOTROS</a>
 
               <!------------Menu usuario------------>
             </div>
@@ -46,8 +55,8 @@
                 <i class="fas fa-user"></i>
               </button>
               <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="login.html">Iniciar Sesion</a>
-                <a class="dropdown-item" href="register.html">Crear cuenta</a>
+                <a class="dropdown-item" href="login">Iniciar Sesion</a>
+                <a class="dropdown-item" href="register">Crear cuenta</a>
               </div>
               <i class="fas fa-shopping-cart"></i>
             </div>
@@ -57,57 +66,95 @@
     </div>
   </header>
 
-  <!------------Carousel------------>
-  <div class="carousel">
-    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-          aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-          aria-label="Slide 2"></button>
-      </div>
-      <!-- Carousel - Slide 1 -->
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="images/foto3.jpg" class="d-block" alt="foto1 carousel" />
-          <div class="carousel-caption">
-            <p class="carousel-text">SUPLEMENTOS DEPORTIVOS</p>
-            <button type="button" class="btn btn-light">COMPRAR</button>
-          </div>
-        </div>
-        <!-- Carousel - Slide 2 -->
-        <div class="carousel-item">
-          <img src="images/foto2.jpg" class="d-block" alt="foto2 carousel" />
-          <div class="carousel-caption">
-            <p class="carousel-text">NUESTRAS RECETAS</p>
-            <button type="button" class="btn btn-light">VER MÁS</button>
-          </div>
-        </div>
-      </div>
-      <button class="carousel-control-prev" class="button" type="button" data-bs-target="#carouselExampleFade"
-        data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-  </div>
-  <p>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, officia
-    eum. Animi ducimus, voluptate voluptates impedit ullam nostrum ab minima
-    necessitatibus dolor, sint consequuntur, quas nam reprehenderit totam a
-    similique!
-  </p>
+  <!------------LOGIN------------> 
 
-  <p>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, officia
-    eum. Animi ducimus, voluptate voluptates impedit ullam nostrum ab minima
-    necessitatibus dolor, sint consequuntur, quas nam reprehenderit totam a
-    similique!
-  </p>
+    <div class="container rounded-3 shadow container-login">
+      <div class="row">
+        <div class="col bg"> 
+
+        </div>
+        <div class="col"> 
+          <div class= "text-end">
+           
+          </div> 
+
+          <!---Saludo Inicial-->
+          
+          <h2 class="fw-bold text-center pt-5 mb-5"> Bienvenidos</h2>
+
+          <!---Datos para el inicio de sesión-->
+          
+          <form action="">
+            <div class="mb4">
+            <label for="email" class="form-label">Correo Electronico</label>
+            <input type="email" class="form-control" name="email">
+            </div>
+            <div class="mb4 my-3">
+              <label for="password" class="form-label">Contraseña</label>
+            <input type="password" class="form-control" name="password">
+            </div>
+            <!---Boton Check para dejar iniciada la sesión-->
+            
+            <div class="mb4 form-check" >
+              <input type="checkbox" name="connected" class="form-check-input" id=" ">
+              <label for="connected" class="form-check-label">Mantenerme Conectado</label>
+            </div>
+
+            <!---Boton de INICIAR SESION-->
+            
+            <div class="d-grid">
+              <button type="submit" class="btn btn-dark">Iniciar Sesión </button>
+            </div>
+
+            <!---Si el usuario no tiene cuenta o perdio su contraseña-->
+            
+            <div class="my-3 register-pass">
+              <span class="cuenta">No tienes cuenta? <a class="registrarte" href="" > Registrate</a></span> <br>
+              <span><a class= "recupero" href=""> Recuperar Contraseña</a></span>
+
+            </div>
+          </form>
+
+        <!---LOGIN CON REDES SOCIALES-->
+          <div class="container w-100 my-5">
+            <div class="row text-center">
+              <div class="col-12">Iniciar Sesión con</div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <button class="btn btn-outline-primary w-100 my-1">
+                  <div class="row align-items-center">
+                    <div class="col-2">
+                      <img src="images/facebook-logo.png" width="32" alt="">
+                    </div>
+                    <div class="col-10 text-center">
+                      Facebook 
+                    </div>
+                  </div>
+                </button>
+              </div>
+              <div class="col">
+                <button class="btn btn-outline-danger w-100 my-1">
+                  <div class="row align-items-center">
+                    <div class="col-2">
+                      <img src="images/google-logo.png" width="23" alt="">
+                    </div>
+                    <div class="col-10 text-center">
+                      Google
+                    </div>
+                  </div>
+                </button>
+              </div>
+            </div>
+
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  
+    <script src="bootstrap.bundle.min.js"></script>
 
   <footer>
     <!------------Redes sociales y logo------------>

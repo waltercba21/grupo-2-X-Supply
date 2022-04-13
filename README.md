@@ -1,4 +1,4 @@
-![Logo](https://user-images.githubusercontent.com/100803671/161872447-fc827daf-f354-400a-ad87-ebd101acdedc.png)
+
 
 _NOSOTROS:_
 
