@@ -484,6 +484,48 @@ header .fa-bars {
     width: auto;
   }
 
+  /* ProductCart  */
+
+  article{
+      background-color:  #fdfdfd ;
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+      margin-top: 10%;
+      margin-bottom: 30%;
+      position: relative;
+      width: 260px;
+      height: 380px;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0px 0px 15px rgba(153, 153, 153, 0.52);
+      
+  }
+
+  .product-imagen {
+      width:auto;
+      height: auto;
+  }
+
+  .precio{
+    font-size: 24px;
+    color: rgb(0, 0, 0);
+    font-weight: 1400;
+    letter-spacing: 1px;
+
+  }
+
+  .descuento{
+    font-size: 24px;
+    color:rgb(255, 88, 88) ;
+    font-weight: 700;
+    letter-spacing: 1px;
+
+  }
+
+
+
+
 
 
 
@@ -550,6 +592,12 @@ header .fa-bars {
     height: 70vh;
    }
 
+   article{
+    display: flex;
+    flex-direction: row;
+    margin: 10% 10% 10% 10%;
+    width: 80%;
+    }
 
 
 }
