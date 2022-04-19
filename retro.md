@@ -2,11 +2,11 @@
 
 En nuestra retrospectiva tratamos los siguientes aspectos:
 
-1 Dejar de hacer
-2 Comenzar a hacer
-3 Hacer más
-4 Hacer menos
-5 Continuar haciendo
+1. Dejar de hacer
+2. Comenzar a hacer
+3. Hacer más
+4. Hacer menos
+5. Continuar haciendo
 
 1. Dejar de hacer 
 
