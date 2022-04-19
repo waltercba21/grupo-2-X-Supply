@@ -7,6 +7,7 @@ En nuestra retrospectiva tratamos los siguientes aspectos:
 3. Hacer más
 4. Hacer menos
 5. Continuar haciendo
+----
 
 1. Dejar de hacer 
 
