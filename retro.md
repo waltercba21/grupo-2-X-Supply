@@ -30,8 +30,8 @@ Para un mejor funcionamiento del grupo deberíamos:
 
 4. Hacer menos #
 
-+ como recien estamos comenzando y estamos iniciando el proyecto, no logramos encontrar que hacer de menos, ya que en estos momentos todo aporte suma
-a la idea de lo que queremos que sea el proyecto
++ como recien estamos comenzando y estamos iniciando el proyecto, no logramos encontrar que hacer de menos,
+ya que en estos momentos todo aporte suma a la idea de lo que queremos que sea el proyecto
 
 
 5. Continuar haciendo 
