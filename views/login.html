@@ -54,22 +54,34 @@
    <!---Datos para el inicio de sesión-->
    <div class="login">
    <form action="" >
-    <h2 class="saludo"> Bienvenido</h2>
+    <h2 class="saludo">INGRESAR</h2>
     <div class="datos">
       <label for="email" class="email"></label>
-     <input type="email" class="form-control" name="email" placeholder="E-Mail">
+     <input type="email" name="email" placeholder="E-Mail">
        <label for="password" class="password"></label>
-     <input type="password" class="form-control" name="password" placeholder="Contraseña">
+     <input type="password" name="password" placeholder="Contraseña">
      
-     
+     <span><a class= "recupero" href=""> Recuperar Contraseña</a></span>
      <!---Boton de INICIAR SESION-->
+     <div class="sesion">
+      <input type="checkbox" name="recordar-sesion">
+      <label for="recordar-sesion">Recordar Sesion</label>
+    </div>
        <button type="submit" class="btn">Iniciar Sesión </button>
     </div>
      <!---Si el usuario no tiene cuenta o perdio su contraseña-->
        <span class="cuenta">No tienes cuenta? <a class="registrarte" href="" > Registrate</a></span> <br>
-       <br><br><br><br> 
-       <span><a class= "recupero" href=""> Recuperar Contraseña</a></span>
+       <br><br>
+       <div class="redes">
+        <a href="" class="google"><i class="fab fa-google"></i>Conectarse con Google</a>
+        <a href="" class="facebook"><i class="fab fa-facebook-f"></i></i>Conectarse con Facebook</a>
+       </div>
+       
+       <br>
+       
    </form>
+
+  
   </div>
 </div>
 
