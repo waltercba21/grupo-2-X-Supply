@@ -29,18 +29,18 @@
 
     
     <nav class="navbar">
-        <a class="nav-link" href="">INICIO</a>
-        <a class="nav-link" href="">PRODUCTOS</a>
-        <a class="nav-link" href="">RECETAS</a>
-        <a class="nav-link" href="">NOSOTROS</a>
+      <a class="nav-link" href="index">INICIO</a>
+      <a class="nav-link" href="productDetail">PRODUCTOS</a>
+      <a class="nav-link" href="">RECETAS</a>
+      <a class="nav-link" href="">NOSOTROS</a>
 
     </nav>
 
     <div class="icons">
-      <i class="fas fa-shopping-cart"></i>
-        <a href="login">Login</a>
-        <a class="register-link"href="register">Register</a>
-        
+      <a href="productCart">
+      <i class="fas fa-shopping-cart"></i></a>
+      <a href="login">Login</a>
+      <a class="register-link" href="register">Register</a>
     </div>
 
 </header>
@@ -88,15 +88,18 @@
 
 
 
-  <footer>
+<footer>
+  <div class="main-footer">
     <!------------Redes sociales y logo------------>
     <div class="redes">
-      <img src="/img/logo-X-Supply.jpg" alt="logo" />
-      <h2>Seguinos en nuestras redes></h2>
+      <a href="index">
+        <img src="/images/logo1.png" alt="logo"/>
+      </a>
+      <h2>Seguinos en nuestras redes</h2>
       <div class="iconos-redes">
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-facebook"></i>
-        <i class="fa-brands fa-twitter"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-twitter"></i>
       </div>
     </div>
     <!------------Navegador del footer------------>
@@ -122,14 +125,16 @@
     <!------------Suscripción al newsletter------------>
     <div class="suscripcion">
       <label for="email">Recibí nuestras ofertas</label>
-      <input type="email" id="email" required />
-      <input type="button" value="Quiero suscribirme" />
+      <input type="email" id="email" required placeholder="Ingresá tu email aquí"/>
+      <button type="submit" class="btn">"Quiero suscribirme"</button>
+
     </div>
-    <!------------Data fiscal AFIP------------>
-    <div class="data-fiscal">
-      <i class="fa-solid fa-qrcode"></i>
-    </div>
-  </footer>
+  </div>
+  <!------------Autor------------>
+  <div class="autor">
+      <h5>Desarrollado por Next Gen Web Developers</h5>
+  </div>
+</footer>
   
 </body>
 
