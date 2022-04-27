@@ -40,3 +40,5 @@ https://www.enasport.com/ -- interfaz amigable, buena manera de alentar a que el
 ## WIREFRAME:
 
 https://miro.com/app/board/uXjVODUQNJc=/?invite_link_id=713171128729
+
+https://trello.com/invite/b/PdQ0f1JL/88803d66c7f1b645193ca7f17fb6fcd9/proyecto-integrador
