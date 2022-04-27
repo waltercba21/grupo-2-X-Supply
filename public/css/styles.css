@@ -108,6 +108,8 @@ header .icons a:hover {
 
 footer {
     background-color: #fff;
+    
+box-shadow: 1px -6px 12px -4px rgba(235, 235, 235, 0.42);
 }
 
 .main-footer {
@@ -429,9 +431,9 @@ header .fa-bars {
 
 
 .redes .google{
-    border: 1px solid var(--Red);
+    
     color: white;
-    background-color: var(--Red);
+    background-color: rgb(146, 0, 0);
     border-radius: 5px;
     padding: 2%;
     padding-right: 9%;
@@ -439,7 +441,7 @@ header .fa-bars {
 }
 
 .redes .facebook{
-    border: 1px solid #3b5998;
+    
     color: white;
     background-color: #3b5998;
     border-radius: 5px;
