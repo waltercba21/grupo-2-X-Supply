@@ -1,5 +1,5 @@
 const productosController= { 
-    index: function {};
+    index: function { };
     listado:function{};
     crear:function{};
     detalle:function{};
