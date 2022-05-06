@@ -1,40 +1,32 @@
 const express= require ("express");
 const path = require ("path");
 const app = express ();
+const mainRouter= require ('./Routes/main');
+const productsRouter = require ('./Routes/products');
+const usersRouter = require ('./Routes/users');
 
 
-const publicPath = path.join(__dirname, '/public')
-app.use(express.static(publicPath));
+app.set ('view engine', 'ejs');
+
+app.set('views','./views');
+
+app.use(express.static(path.join(__dirname, '../public')));
+
 
 app.listen (3000, () => {
     console.log ("Puerto Activo")
 });
 
+app.use ('/', mainRouter);
+app.use ('/index', mainRouter);
+app.use ('/login', usersRouter);
+app.use ('/products', productsRouter);
 
-app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, './views/index.html'));
- });
+app.use ('/register', usersRouter);
 
- app.get('/index', (req, res) => {
-   res.sendFile(path.join(__dirname, './views/index.html'));
-});
 
- app.get('/login', (req, res) => {
-    res.sendFile(path.join(__dirname, './views/login.html'));
- });
 
- app.get('/productCart', (req, res) => {
-    res.sendFile(path.join(__dirname, './views/productCart.html'));
- });
 
- app.get('/productDetail', (req, res) => {
-    res.sendFile(path.join(__dirname, './views/productDetail.html'));
- });
 
- app.get('/register', (req, res) => {
-    res.sendFile(path.join(__dirname, './views/register.html'));
- });
-
-//agrego este comentario solo para probar que funcione todo OK. 
 
 
