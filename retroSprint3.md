@@ -1,4 +1,3 @@
-
 # Retrospectiva del Equipo
 
 En nuestra retrospectiva tratamos los siguientes aspectos:
@@ -17,16 +16,14 @@ En nuestra retrospectiva tratamos los siguientes aspectos:
 
 Para un mejor funcionamiento del grupo deberíamos:
 
++ Organizar mejor los tiempos de trabajo
 + Definir plazos para realizar tareas y así llegar a tiempo con las entregas.
-+ Ayudar a los compañeros en todo lo que podamos
-+ Organizar horarios para revisar avances y efectuar delegación de tareas.
+
 
 3. Hacer más 
 
-+ Reuniones, teniendo en cuenta nuestros tiempos, para no perjudicar los tiempos del otro.
-+ Establecer patrones de diseño para lograr un código más legible y fácil de entender.
-+ Estar pendientes de Slack e informar cambios en git, para que no ocurran problemas entre nosotros.
-+ Comentar por Slack que tarea se está realizando y actualizar Trello.
++ Seguimiento de las tareas de los compañeros.
++ Dedicarle mas tiempo de busqueda y resolucion de problemas, que nos puedan atrasar el proyecto.
 
 4. Hacer menos #
 
