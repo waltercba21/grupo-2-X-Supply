@@ -1,4 +1,4 @@
-```diff
+
 # Retrospectiva del Equipo
 
 En nuestra retrospectiva tratamos los siguientes aspectos:
