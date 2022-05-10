@@ -52,6 +52,18 @@ section {
     ;
 }
 
+.btnGreen{
+    display: inline-block;
+    border-radius: 5px;
+    background: rgb(0, 77, 0);
+    color: #fff;
+    padding: 0.6rem 2.5rem 0.7rem 2.5rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+    text-decoration: none;
+    font-weight: 600;
+}
+
 
 
 /* HEADER */
@@ -946,7 +958,67 @@ article {
     margin-top: 1%
 }
 
+.containerAdm{
+    display: flex;
+    background-color: #fdfdfd;
+    flex-direction: column;
+    margin: auto;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    width: 50%;
+    box-shadow: 0px 0px 15px rgba(189, 189, 189, 0.52);
+}
 
+
+.crearProductos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.crearProductos input{
+    display: flex;
+    margin: 2% 0;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 10rem 1rem 1rem;
+    font-size: 14px;
+    border-width: 0px;
+    border-color: #ffffff;
+    background-color: #FFFFFF;
+    color: #000000;
+    border-style: solid;
+    border-radius: 4px;
+    box-shadow: 0px 0px 15px rgba(189, 189, 189, 0.52);
+}
+
+.crearProductos h3{
+    font-size: 3rem;
+    margin-top: 2%;
+}
+
+.crearProductos button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 4%;
+
+}
+
+.crearProductos #descripcion{
+    width: 100%;
+    height: 50px;
+    margin-bottom: 2%;
+    padding-left: 1%;
+    margin-top: 2%;
+
+}
 
 
 
