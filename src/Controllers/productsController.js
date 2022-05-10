@@ -7,6 +7,10 @@ const productsController= {
     res.render ('productDetail')
  },
 
+ admProduct: (req, res) => {
+   res.render ('admProduct')
+}
+
 }
 
 module.exports = productsController;
