@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<!------------Head------------>
+<%- include('./partials/head') %>
+</head>
+
+<body>
+  <header>
+    <!------------Header------------>
+    <%- include('./partials/header') %>
+  </header>
+
+  <main>
+    
+    
+    
+      <h3 class="offers">TODOS LOS PRODUCTOS</h3>
+      <div class="section-cards">
+    
+        <%products.forEach(function(product){
+            
+            %>
+        <div class="card">
+    
+          <div class="imgBox">
+            <img src="<%=product.imagen%>" alt="" class="product-img">
+          </div>
+    
+          <div class="contentBox">
+            <h3><%=product.nombre%></h3>
+            <h2 class="price"><%=product.precio%></h2>
+            <a href="/products/productDetail/<%=product.id%>" class="buy">COMPRAR</a>
+          </div>
+    
+    
+        </div>
+        <% }) %>
+    
+        
+      </div>
+    
+    
+    
+  </main>
+
+<!------------Footer------------>
+  <footer>
+    <%- include('./partials/footer') %>
+  </footer>
+
+</body>
+</html>

@@ -12,42 +12,13 @@
     <%- include('./partials/header') %>
   </header>
 
-  <div class="containerAdm">
-
-    <div class="crearProductos">
-      <h3 class="">Crear Productos</h3>
-      <form action="POST" name="" class="">
-        <input type="text" placeholder="Marca" class="" name="marca" required/>
-      <br>
-        <input type="text" placeholder="Nombre del producto" name="nombreProducto" class="" required/>
-      <br>
-        <input type="text" placeholder="Precio Oferta" name="precioOferta" class=""/>
-      <br>
-        <input type="text" placeholder="Precio Regular" name="precioRegular" class="" required/>
-      <br>
-        <input type="text" placeholder="Descuento" name="descuento" class=""/>
-      <br>
-        <label for="imagenProducto" class="cp-tituloSeccion">Imagen del producto</label>
-        <input id="imagenProducto" type="file" name="images" accept="jpg, png, jpeg" class="" multiple required/>
-      <br>
-        <label for="descripcion" class="desc"> Descripción:</label>
-      <br>
-        <textarea name="descripcion" id="descripcion" class=""> Descripción del producto</textarea>
-      <br>
-        <input type="number" placeholder="Stock" name="stock" class="" required/>
-      <br/>
-      <br/>
-        <button type="submit" class="btnGreen">Guardar</button>
-        <button type="reset" class="btn">Reset</button>
-      </form>
-    </div> 
-  </div>
+  
 
   <div class="containerAdm"> 
 
     <div class="crearProductos">
       <h3 class="">Editar Productos</h3>
-      <form action="POST" name="" class="">
+      <form action="PUT" name="" class="">
         <input type="text" placeholder="ID del producto" name="idProducto" class="" required/>
       <br>
         <input type="text" placeholder="Marca" class="" name="marca" required/>

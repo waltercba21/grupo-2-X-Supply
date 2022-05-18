@@ -15,18 +15,18 @@
   <main>
     <section class="productDetail">
       <div class="img-detail">
-        <img src="/images/product.jpg" alt="" />
+        <img src="<%=product.imagen%>" alt="" />
       </div>
 
       <div class="detail">
         <div class="detail-title">
-          <h3>Gold Standard 100% Whey Protein 5lbs</h3>
-          <h6>OPTIMUM NUTRITION</h6>
+          <h3><%=product.nombre%></h3>
+          <h6><%=product.marca%></h6>
         </div>
         <div>
           <p><strong>Sabor:</strong> Cookies & Cream</p> 
           <p><strong>Peso:</strong> 5lbs</p>
-          <p><strong>Precio:</strong><span class="price">$26.471</span></p>
+          <p><strong>Precio:</strong><span class="price"><%=product.precio%></span></p>
 
           <p>3 cuotas sin interés de $0</p>
 
@@ -48,7 +48,7 @@
       <div class="descripcion">
         <h3>DESCRIPCION</h3>
         <span>Marca</span>
-        <p>Optimum Nutrition</p>
+        <p><%=product.marca%></p>
         <span>Tipo de suplemento</span>
         <p>Proteína</p>
         <span>Formato</span>
@@ -57,10 +57,7 @@
         <p>Pote</p>
         <span>Modo de uso</span>
         <p>
-          Este producto se disfruta mejor a primera hora de la mañana y / o
-          durante los 30 minutos antes o inmediatamente después del entrenamiento.
-          Simplemente mezcle una cucharada redondeada (29,4 g) en 180-240 ml de
-          agua fría.
+          <%=product.descripcion%>
         </p>
         <span>Objetivos</span>
         <p>
