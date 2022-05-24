@@ -7,26 +7,77 @@ let products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'))
 
 const productsController= {
    productCart: (req, res) => {
-      res.render ('productCart')
+      res.render ('./products/productCart')
  },
 
    productDetail: (req, res) => {
       let id = req.params.id;
       let product = products.find((product) => product.id == id);
-      res.render ('productDetail', {product})
+      res.render ('./products/productDetail', {product})
 
  },
 
  createProduct: (req, res) => {
-   res.render ('createProduct')
+   res.render ('./products/createProduct')
 },
+
+store: (req, res) => {
+    
+
+	let image;
+		if(req.file !=undefined ) {
+			image = req.file.filename;
+		} else {
+			image = "default-image.png";
+		}
+		let newProducto = {
+			id: products[products.length -1].id + 1,
+			...req.body,
+			imagen: image,
+		};
+
+		products.push(newProducto);
+		fs.writeFileSync(productsFilePath, JSON.stringify(products, null, " "));
+		res.redirect("/products");
+
+ },
 
 editProduct: (req, res) => {
-   res.render ('editProduct')
+	let id = req.params.id;
+	let productToEdit = products.find((product) => product.id == id);
+	res.render ('/editProduct', {productToEdit})
 },
 
+editModif: (req,res) => {
+	let id = req.params.id; 
+	let producToEdit = products.find(producto => producto.id == id); 
+	let image 
+
+	if (req.file != undefined) {
+		image = req.file.filename;
+	} else {
+		image = "default-image.png";
+	}
+
+   producToEdit = {
+		id: producToEdit.id,
+		...req.body,
+		imagen: image
+	}
+
+	let newProducts = products.map(products => {
+		if (products.id == producToEdit.id) {
+			return products = {...producToEdit}; 
+		}
+		return products; 
+	})
+
+	fs.writeFileSync(productsFilePath, JSON.stringify(newProducts, null, ' '));
+	res.redirect("/products");
+
+},
 products: (req,res) => {
-res.render ('products', {products})
+res.render ('/products', {products})
 }
 
 }

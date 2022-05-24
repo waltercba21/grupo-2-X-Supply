@@ -3,13 +3,13 @@
 
 <head>
 <!------------Head------------>
-<%- include('./partials/head') %>
+<%- include('./../partials/head') %>
 </head>
 
 <body>
   <header>
     <!------------Header------------>
-    <%- include('./partials/header') %>
+    <%- include('./../partials/header') %>
   </header>
 
   
@@ -17,19 +17,14 @@
   <div class="containerAdm"> 
 
     <div class="crearProductos">
-      <h3 class="">Editar Productos</h3>
-      <form action="PUT" name="" class="">
-        <input type="text" placeholder="ID del producto" name="idProducto" class="" required/>
-      <br>
+      <h3 class="">EDITAR <%=productToEdit.id%></h3>
+      <form action="/editProduct/<%= productToEdit.id %>/?_method=PUT" method="POST" enctype="multipart/form-data">
+        
         <input type="text" placeholder="Marca" class="" name="marca" required/>
       <br>
-        <input type="text" placeholder="Nombre del producto" name="nombreProducto" class="" required/>
+        <input type="text" placeholder="Nombre del producto" name="nombre" class="" required/>
       <br>
-        <input type="text" placeholder="Precio Oferta" name="precioOferta" class=""/>
-      <br>
-        <input type="text" placeholder="Precio Regular" name="precioRegular" class="" required/>
-      <br>
-        <input type="text" placeholder="Descuento" name="descuento" class=""/>
+        <input type="text" placeholder="Precio" name="precio" class="" required/>
       <br>
         <label for="imagenProducto" class="cp-tituloSeccion">Imagen del producto</label>
         <input id="imagenProducto" type="file" name="images" accept="jpg, png, jpeg" class="" multiple required/>
@@ -49,7 +44,7 @@
 
   <!------------Footer------------>
   <footer>
-    <%- include('./partials/footer') %>
+    <%- include('./../partials/footer') %>
   </footer>
   
 </body>
