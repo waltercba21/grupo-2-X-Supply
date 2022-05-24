@@ -38,14 +38,14 @@ store: (req, res) => {
 
 		products.push(newProducto);
 		fs.writeFileSync(productsFilePath, JSON.stringify(products, null, " "));
-		res.redirect("/products");
+		res.redirect("./products/products");
 
  },
 
 editProduct: (req, res) => {
 	let id = req.params.id;
 	let productToEdit = products.find((product) => product.id == id);
-	res.render ('/editProduct', {productToEdit})
+	res.render ('./products/editProduct', {productToEdit})
 },
 
 editModif: (req,res) => {
@@ -77,7 +77,7 @@ editModif: (req,res) => {
 
 },
 products: (req,res) => {
-res.render ('/products', {products})
+res.render ('./products/products', {products})
 }
 
 }
