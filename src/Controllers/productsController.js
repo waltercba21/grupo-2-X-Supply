@@ -38,7 +38,7 @@ store: (req, res) => {
 
 		products.push(newProducto);
 		fs.writeFileSync(productsFilePath, JSON.stringify(products, null, " "));
-		res.redirect("./products/products");
+		res.redirect("/products");
 
  },
 

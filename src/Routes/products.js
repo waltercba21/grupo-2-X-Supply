@@ -22,6 +22,7 @@ const uploadFile = multer({storage});
 router.get ('/productCart', productsController.productCart);
 //---------DETALLE DE PRODUCTOS-------//
 router.get ('/productDetail/:id', productsController.productDetail);
+router.get ('/productDetail/:id', productsController.productDetail);
 //---------EDITAR PRODUCTOS-------//
 router.get ('/editProduct/:id', productsController.editProduct);
 router.put('/editProduct/:id', productsController.editModif)
