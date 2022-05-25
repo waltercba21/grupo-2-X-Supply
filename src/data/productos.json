@@ -144,5 +144,25 @@
   "stock": "3",
   "categoria": "proteina",
   "imagen": "product1653441441166.png"
+ },
+ {
+  "id": 18,
+  "marca": "lllll",
+  "nombre": "lllllll",
+  "precio": "1",
+  "descripcion": "fd",
+  "stock": "2",
+  "categoria": "proteina",
+  "imagen": "product1653442235063.png"
+ },
+ {
+  "id": 19,
+  "marca": "m",
+  "nombre": "m",
+  "precio": "777777",
+  "descripcion": "m",
+  "stock": "2",
+  "categoria": "proteina",
+  "imagen": "product1653443106671.png"
  }
 ]
