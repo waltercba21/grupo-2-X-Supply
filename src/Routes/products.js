@@ -24,6 +24,7 @@ router.get ('/productCart', productsController.productCart);
 router.get ('/productDetail/:id', productsController.productDetail);
 router.get ('/productDetail/:id', productsController.productDetail);
 //---------EDITAR PRODUCTOS-------//
+
 router.get ('/editProduct/:id', productsController.editProduct);
 router.put('/editProduct/:id', productsController.editModif)
 
@@ -33,5 +34,8 @@ router.post('/createProduct', uploadFile.single('image'), productsController.sto
 
 //---------HOME DE PRODUCTOS-------//
 router.get ('/', productsController.products);
+
+//====== PRODUCT DELETE =============================
+router.delete('/editProduct/:id', productsController.delete)
 
 module.exports = router;

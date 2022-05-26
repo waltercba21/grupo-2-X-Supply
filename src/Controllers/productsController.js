@@ -56,7 +56,7 @@ editModif: (req,res) => {
 	if (req.file != undefined) {
 		image = req.file.filename;
 	} else {
-		image = "default-image.png";
+		image = producToEdit.imagen;
 	}
 
    producToEdit = {
@@ -72,13 +72,29 @@ editModif: (req,res) => {
 		return products; 
 	})
 
+
 	fs.writeFileSync(productsFilePath, JSON.stringify(newProducts, null, ' '));
 	res.redirect("/products");
 
 },
+delete: (req, res) => {
+
+    
+    let id = req.params.id;
+    
+    let productToDelete = products.filter(product => product.id != id);
+
+
+    fs.writeFileSync(productsFilePath, JSON.stringify(productToDelete, null, ' '));
+    res.redirect('/products')
+
+  },
+
 products: (req,res) => {
 res.render ('./products/products', {products})
 }
+
+
 
 }
 

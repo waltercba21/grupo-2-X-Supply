@@ -117,32 +117,14 @@
  },
  {
   "id": 15,
-  "marca": "c",
-  "nombre": "s",
-  "precio": "7",
-  "descripcion": "s",
-  "stock": "2",
-  "categoria": "proteina",
-  "imagen": "product1653440393118.png"
+  "imagen": "default-image.png"
  },
  {
   "id": 16,
-  "marca": "asd",
-  "nombre": "a",
-  "precio": "50002",
-  "descripcion": "sda",
-  "stock": "1",
-  "categoria": "proteina",
   "imagen": "product1653440407345.png"
  },
  {
   "id": 17,
-  "marca": "22222222222",
-  "nombre": "22222222222",
-  "precio": "2222222",
-  "descripcion": "sdasd",
-  "stock": "3",
-  "categoria": "proteina",
   "imagen": "product1653441441166.png"
  },
  {
@@ -154,15 +136,5 @@
   "stock": "2",
   "categoria": "proteina",
   "imagen": "product1653442235063.png"
- },
- {
-  "id": 19,
-  "marca": "m",
-  "nombre": "m",
-  "precio": "777777",
-  "descripcion": "m",
-  "stock": "2",
-  "categoria": "proteina",
-  "imagen": "product1653443106671.png"
  }
 ]
