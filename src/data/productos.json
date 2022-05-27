@@ -97,5 +97,15 @@
   "descripcion": "ss",
   "stock": "3",
   "imagen": "product1653611696335.png"
+ },
+ {
+  "id": 11,
+  "marca": "c",
+  "nombre": "c",
+  "precio": "7",
+  "descripcion": "s",
+  "stock": "1",
+  "categoria": "proteina",
+  "imagen": "default-image.png"
  }
 ]
