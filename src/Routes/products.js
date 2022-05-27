@@ -24,7 +24,7 @@ router.get ('/productCart', productsController.productCart);
 
 //---------CREAR PRODUCTOS-------//
 router.get ('/createProduct', productsController.createProduct);
-router.post('/createProduct', uploadFile.any(), productsController.store)
+router.post('/createProduct', uploadFile.any('image'), productsController.store)
 
 //---------HOME DE PRODUCTOS-------//
 router.get ('/', productsController.products);

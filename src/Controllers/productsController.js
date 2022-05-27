@@ -25,8 +25,8 @@ store: (req, res) => {
     
 
 	let image;
-		if(req.file !=undefined ) {
-			image = req.file.filename;
+		if(req.files[0] !=undefined ) {
+			image = req.files[0].filename;
 		} else {
 			image = "default-image.png";
 		}
@@ -75,7 +75,9 @@ editModif: (req,res) => {
 	
 
 	fs.writeFileSync(productsFilePath, JSON.stringify(newProducts, null, ' '));
-	res.redirect("/");
+	
+	res.redirect("/products");
+	
 
 },
 delete: (req, res) => {

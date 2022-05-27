@@ -106,6 +106,35 @@
   "descripcion": "s",
   "stock": "1",
   "categoria": "proteina",
+  "imagen": "product1653614483592.png"
+ },
+ {
+  "id": 12,
+  "marca": "c",
+  "nombre": "c",
+  "precio": "50002",
+  "descripcion": "s",
+  "stock": "1",
+  "categoria": "proteina",
   "imagen": "default-image.png"
+ },
+ {
+  "id": 13,
+  "marca": "a",
+  "nombre": "a",
+  "precio": "9999",
+  "descripcion": "s",
+  "stock": "1",
+  "categoria": "proteina",
+  "imagen": "default-image.png"
+ },
+ {
+  "id": 14,
+  "marca": "qqqqqqqq",
+  "nombre": "mmmmmmmmm",
+  "precio": "9999",
+  "descripcion": " Descripción del producto",
+  "stock": "1",
+  "imagen": "product1653615013145.png"
  }
 ]
