@@ -53,8 +53,8 @@ editModif: (req,res) => {
 	let producToEdit = products.find(producto => producto.id == id); 
 	let image 
 
-	if (req.file != undefined) {
-		image = req.file.image;
+	if (req.files[0] != undefined) {
+		image = req.files[0].filename;
 	} else {
 		image = producToEdit.imagen;
 	}
@@ -75,7 +75,7 @@ editModif: (req,res) => {
 	
 
 	fs.writeFileSync(productsFilePath, JSON.stringify(newProducts, null, ' '));
-	res.redirect("/products");
+	res.redirect("/");
 
 },
 delete: (req, res) => {

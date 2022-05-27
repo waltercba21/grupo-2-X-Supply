@@ -18,7 +18,7 @@
 
     <div class="crearProductos">
       <h3 class="">EDITAR <%= productToEdit.id%></h3>
-      <form method="POST" action="/editProduct/<%= productToEdit.id %>?_method=PUT" >
+      <form method="POST" action="/editProduct/<%= productToEdit.id %>?_method=PUT" enctype="multipart/form-data">
         
         <input type="text" placeholder="Marca" class="" name="marca" value="<%= productToEdit.marca%>" required/>
       <br>
