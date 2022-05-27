@@ -54,7 +54,7 @@ editModif: (req,res) => {
 	let image 
 
 	if (req.file != undefined) {
-		image = req.file.filename;
+		image = req.file.image;
 	} else {
 		image = producToEdit.imagen;
 	}
@@ -72,6 +72,7 @@ editModif: (req,res) => {
 		return products; 
 	})
 
+	
 
 	fs.writeFileSync(productsFilePath, JSON.stringify(newProducts, null, ' '));
 	res.redirect("/products");

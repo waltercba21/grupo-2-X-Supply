@@ -20,22 +20,25 @@ const uploadFile = multer({storage});
 
  //---------CARRITO DE PRODUCTOS-------//
 router.get ('/productCart', productsController.productCart);
-//---------DETALLE DE PRODUCTOS-------//
-router.get ('/productDetail/:id', productsController.productDetail);
-router.get ('/productDetail/:id', productsController.productDetail);
-//---------EDITAR PRODUCTOS-------//
 
-router.get ('/editProduct/:id', productsController.editProduct);
-router.put('/editProduct/:id', productsController.editModif)
 
 //---------CREAR PRODUCTOS-------//
 router.get ('/createProduct', productsController.createProduct);
-router.post('/createProduct', uploadFile.single('image'), productsController.store)
+router.post('/createProduct', uploadFile.any('image'), productsController.store)
 
 //---------HOME DE PRODUCTOS-------//
 router.get ('/', productsController.products);
 
 //====== PRODUCT DELETE =============================
 router.delete('/editProduct/:id', productsController.delete)
+
+//---------DETALLE DE PRODUCTOS-------//
+router.get ('/productDetail/:id', productsController.productDetail);
+
+//---------EDITAR PRODUCTOS-------//
+
+router.get ('/editProduct/:id', productsController.editProduct);
+router.put('/editProduct/:id', uploadFile.any('image'), productsController.editModif)
+
 
 module.exports = router;
