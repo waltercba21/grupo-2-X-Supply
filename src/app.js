@@ -7,30 +7,26 @@ const productsRouter = require ('./Routes/products');
 const usersRouter = require ('./Routes/users');
 
 
-
-
 app.set ('view engine', 'ejs');
-
 app.set('views','./views');
 
 app.use(express.static(path.join(__dirname, '../public')));
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json())
-
 app.use(methodOverride("_method"))
-
-
 
 app.listen (3000, () => {
     console.log ("Puerto Activo")
 });
 
-
+//Main
 app.use ('/', mainRouter);
 app.use ('/index', mainRouter);
 
+//Users
 app.use ('/users', usersRouter);
 app.use ('/', usersRouter);
 
+//Products
 app.use ('/products', productsRouter);
 app.use ('/', productsRouter);
