@@ -25,6 +25,15 @@
         <div class="datos">
           <label for="email" class="email"></label>
         <input type="email" name="email" placeholder="E-Mail">
+        <% if (locals.errors && errors.email) { %>
+          <div class="text-danger">
+            <%= errors.email.msg %> 
+          </div>
+         
+        <% } %>
+     
+         
+        
           <label for="password" class="password"></label>
         <input type="password" name="password" placeholder="Contraseña">
         

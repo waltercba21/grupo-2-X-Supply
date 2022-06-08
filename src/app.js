@@ -1,4 +1,5 @@
 const express= require ("express");
+const session = require ('express-session');
 const path = require ("path");
 const app = express ();
 const methodOverride = require('method-override');
@@ -12,8 +13,14 @@ app.set('views','./views');
 
 app.use(express.static(path.join(__dirname, '../public')));
 app.use(express.urlencoded({ extended: false }));
-app.use(express.json())
-app.use(methodOverride("_method"))
+app.use(express.json());
+app.use(methodOverride("_method"));
+
+app.use (session({
+    secret : "Es un secreto",
+    resave: false,
+    saveUninitialized: false,
+}));
 
 app.listen (3000, () => {
     console.log ("Puerto Activo")

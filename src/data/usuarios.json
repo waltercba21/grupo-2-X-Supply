@@ -311,5 +311,84 @@
   "password": "1234",
   "rep-contraseña": "1234",
   "terminos": "on"
+ },
+ {
+  "id": 39,
+  "user-name": "Laura",
+  "name": "Montien",
+  "email": "laura@montiel.com.ar",
+  "address": "san juan 156",
+  "celular": "123456",
+  "password": "123465",
+  "rep-contraseña": "12346",
+  "terminos": "on"
+ },
+ {
+  "id": 40,
+  "user-name": "Micaela",
+  "name": "Lauriente",
+  "email": "mica@lauriente.com.ar",
+  "address": "san juan 123",
+  "celular": "123456",
+  "password": "112233",
+  "rep-contraseña": "112233",
+  "terminos": "on"
+ },
+ {
+  "id": 41,
+  "user-name": "Micaela",
+  "name": "Lauriente",
+  "email": "mica@lauriente.com.ar",
+  "address": "san juan 123",
+  "celular": "123456",
+  "password": "112233",
+  "rep-contraseña": "112233",
+  "terminos": "on"
+ },
+ {
+  "id": 42,
+  "user-name": "Javier ",
+  "name": "Herrera",
+  "email": "javi@herrera.com.ar",
+  "address": "diego 156465",
+  "celular": "213456",
+  "password": "112233",
+  "rep-contraseña": "112233",
+  "terminos": "on"
+ },
+ {
+  "id": 43,
+  "user-name": "diego",
+  "name": "sastre",
+  "email": "diego@sastre.com.ar",
+  "address": "fuentes",
+  "celular": "156464",
+  "password": "123456",
+  "rep-contraseña": "123456",
+  "terminos": "on"
+ },
+ {
+  "id": 44,
+  "user-name": "sdaasd",
+  "name": "dasdad",
+  "email": "suquiacordoba@hotmail.com",
+  "address": "sdadasd",
+  "celular": "1546123",
+  "password": "$2a$10$V2p5l9AqaA2fEeW71bKY0.YVpAvrT5HWpIIEM6M/2GPZXSYT6Qjz.",
+  "rep-contraseña": "132456",
+  "terminos": "on",
+  "imagenUsuario": "user-1654700842470.jpg"
+ },
+ {
+  "id": 45,
+  "user-name": "Agustina",
+  "name": "Cordero",
+  "email": "agu@cordero.com.ar",
+  "address": "Goethe 1898",
+  "celular": "2313123123",
+  "password": "$2a$10$XuHbAKo98ZD8zdOgnpSlTuMkzj0ZqmWu5qb29YnyToXnJ/Djmutxu",
+  "rep-contraseña": "1231313",
+  "terminos": "on",
+  "imagenUsuario": "user-1654701213189.jpg"
  }
 ]
