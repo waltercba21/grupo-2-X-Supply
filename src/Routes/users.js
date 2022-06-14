@@ -21,7 +21,7 @@ router.post('/register', upload.single("imagenUsuario"), registerValidation, use
 
 //Perfil del Usuario
 
-router.get ('/profile', usersController.profile);
+router.get ('/userProfile', usersController.profile);
 
 
 

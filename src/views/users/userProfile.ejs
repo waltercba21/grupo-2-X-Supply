@@ -8,15 +8,29 @@
 <body>
     <header>
             <!------------Header------------>
-            <%- include('./../partials/header') %>
+            <%- include('./../partials/header')%>
           </header>
-          <h1> Bienvenido a tu cuenta de Usuario</h1>
+          <form action="/src/views/users/userProfile.ejs" >
+          <div class="container" style="margin-top: 40px;">
+            <div class="row"> 
+              <div class=" col-md-3">
+          
+          <h1> Bienvenido a tu cuenta <%= user.user-name %> </h1>
+
+          <img src="/public/images/usuario-default.jpg" >
+          <br>
+          <br>
+          
+          <div class="alert alert-succes"><%= user.email %> 
+          
+          </div>
           
 
 
-
-
-
+            </div>
+         </div>
+      </div>
+    </form>
           <!------------Footer------------>
 <footer>
     <%- include('./../partials/footer') %>

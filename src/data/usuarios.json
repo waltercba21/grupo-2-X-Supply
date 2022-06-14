@@ -390,5 +390,17 @@
   "rep-contraseña": "1231313",
   "terminos": "on",
   "imagenUsuario": "user-1654701213189.jpg"
+ },
+ {
+  "id": 46,
+  "user-name": "Diego",
+  "name": "Elizondo",
+  "email": "diego@gmail.com",
+  "address": "Estrada 456",
+  "celular": "35465444",
+  "password": "$2a$10$2g/E01ol5F80HV4bDlfBmeTRm9jVEohFJz/Ndtu6D4wkikXDutjbe",
+  "rep-contraseña": "123456",
+  "terminos": "on",
+  "imagenUsuario": "user-1655134033858.jpg"
  }
 ]

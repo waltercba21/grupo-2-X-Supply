@@ -12,7 +12,7 @@ const usersController = {
    console.log(resultValidation);
    
    if (resultValidation.errors.length > 0){
-      return res.render ('register', {
+      return res.render ('./users/register', {
          errors: resultValidation.mapped (),
          oldData : req.body
           });
@@ -38,8 +38,6 @@ const usersController = {
       imagenUsuario: req.file.filename
    }
    let userCreated = User.create(userToCreate);
-
-   
    res.redirect('login');
   },
    
@@ -55,9 +53,11 @@ const usersController = {
          
          let isOkThePassword = bcryptjs.compareSync (req.password, userToLogin.password);
          if (isOkThePassword){
+            //Con este metodo borramos la contraseña cada vez que el usuario quiera volver a ingresar (Por Seguridad)
+            delete userToLogin.password;
             //Con este metodo guardamos el usuario en SESSION;
             req.session.userLogged = userToLogin;
-            return  res.redirect('/users/profile');
+            return  res.redirect('userProfile');
        }
        return res.render ( './users/login', {
           errors: {
@@ -78,9 +78,9 @@ const usersController = {
 
    },
    profile: (req,res) => {
-      console.log('Estas en el Profile');
-      console.log('req.session');
-      return res.render ('./users/profile');
+      return res.render ('./users/userProfile',{
+         //user: req.session.userLogged
+      });
    }
 
 }
