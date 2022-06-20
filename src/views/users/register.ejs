@@ -13,41 +13,49 @@
   </header>
 
   <main>
+     
     <div class= "bloque_registro">
       <img src="/images/foto9.jpg" alt="suplementos" class="product_img">
       <div class= "registro">
+        <% if(locals.errors) {
+          errors.forEach (error => { %> 
+            <p class="feedback"> <%= error.msg %> </p>
+       <% })   
+       }%>
         <form action="/users/register" method="POST" enctype="multipart/form-data">
+       
 
-          <label> Imagen de Perfil</label>
-          <input type="file" name="imagenUsuario"/>
-
+        <label> Imagen de Perfil</label>
+        <input type="file" name="imagenUsuario" />
+          
+        
         <label for="userName"></label>
-        <input type="text"  name="user-name" placeholder="Nombre de Usuario"/> 
+        <input type="text" name="userName" placeholder = "Nombre" value="<%= locals.old && old.useName ? old.userName : '' %>"/>  
+          
 
-      
-
-        <label for="name"></label>
-        <input type="text"  name="name" placeholder="Nombre Completo"/> 
-
-    
+        <label for="surname"></label>
+        <input type="text"  name="surname" placeholder="Apellido" value="<%= locals.old && old.surname ? old.surname: '' %>"/> 
+       
 
         <label for="email"></label>
-        <input type="email"  name="email" placeholder="E-Mail"/>
+        <input type="email"  name="email" placeholder="E-Mail" value="<%= locals.old && old.email? old.email: '' %>" />
+        
 
         
 
-        <label for="direccion"></label>
-        <input type="text"  name="address" placeholder="Dirección"/>
+        <label for="address"></label>
+        <input type="text"  name="address" placeholder="Dirección" value="<%= locals.old && old.address ? old.address: '' %>"/>
+       
 
-        
+        <label for="celular"></label>
+        <input type="number"  name="celular" placeholder="Telefono" value="<%= locals.old && old.celular ? old.celular : '' %>"/>
+       
 
-        <label for="telefono"></label>
-        <input type="number"  name="celular" placeholder="Telefono"/>
 
-        
-
-        <label for="contraseña"></label>
-        <input type="password"  name="password" placeholder="Contraseña"/>
+        <label for="password"></label>
+        <input type="password"  
+               name="password" 
+               placeholder="Contraseña" />
         
 
         <label for="rep-contraseña"></label>

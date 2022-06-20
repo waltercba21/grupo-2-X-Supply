@@ -15,7 +15,7 @@ const User = {
         return JSON.parse(fs.readFileSync (this.fileName, 'utf-8'));
     },
     //Metodo para generar un ID
-    generateId: function(){
+    generateId: function(){ 
         //SI tengo un usuario en el array, entonces sumale 1 al ultimo numero
         let allUsers = this.findAll();
         let lastUser = allUsers.pop();

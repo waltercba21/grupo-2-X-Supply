@@ -402,5 +402,94 @@
   "rep-contraseña": "123456",
   "terminos": "on",
   "imagenUsuario": "user-1655134033858.jpg"
+ },
+ {
+  "id": 47,
+  "user-name": "Maria",
+  "name": "Cordero",
+  "email": "maria@cordero.com",
+  "address": "igualdad 88",
+  "celular": "3216554564",
+  "password": "$2a$10$ewUS4zEeFLqUmr4qAsaZhuqIsU3Y65tNgsBAu4WAlpbnY/XaTBUyC",
+  "rep-contraseña": "123456",
+  "imagenUsuario": "user-1655247693610.jpg"
+ },
+ {
+  "id": 48,
+  "user-name": "pamela ",
+  "name": "david ",
+  "email": "pamela@david.com.ar",
+  "address": "santos 123",
+  "celular": "15612345",
+  "password": "$2a$10$XbrONEg1leWJg6qDLQKHSetVt4UriB7WXt5nBOzLCJqobDE/A8ztm",
+  "rep-contraseña": "123456",
+  "terminos": "on",
+  "imagenUsuario": "user-1655503114454.jpg"
+ },
+ {
+  "id": 49,
+  "user-name": "diego",
+  "name": "contreras",
+  "email": "diego@contreras.com",
+  "address": "san antonio 154",
+  "celular": "3512121212",
+  "password": "$2a$10$yCDENElzV80od5Z0ZCuMLeS912U0VgWAO3kfkRbzTUNsrF98YmHD.",
+  "rep-contraseña": "123456",
+  "terminos": "on",
+  "imagenUsuario": "user-1655568986456.jpg"
+ },
+ {
+  "id": 50,
+  "user-name": "Ana",
+  "name": "suarez",
+  "email": "ana@suarez.com.ar",
+  "address": "pedro 154",
+  "celular": "15645646",
+  "password": "$2a$10$xhGxtOEoEK9gsJxLB2Vd8OHKVtW5OCPtdTjvKOSW7xy4pH10ATVme",
+  "rep-contraseña": "123456",
+  "terminos": "on",
+  "imagenUsuario": "user-1655569028606.jpg"
+ },
+ {
+  "id": 51,
+  "user-name": "pedro ",
+  "name": "juarez",
+  "email": "pedro@juarez.com",
+  "address": "albertina 5645",
+  "celular": "132456",
+  "password": "$2a$10$soxjU1.S0bgGPWlDtkN2Yeo8d0fO1JhL3GjioLRlQaI.WLfS0rV1.",
+  "rep-contraseña": "123456",
+  "terminos": "on",
+  "imagenUsuario": "user-1655679262627.jpg"
+ },
+ {
+  "id": 52,
+  "userName": "Agustina",
+  "surname": "Alfonso",
+  "email": "juan@pedro.com.ar",
+  "address": "Goethe 1898",
+  "celular": "3561446565",
+  "password": "123456",
+  "rep-contraseña": "123456"
+ },
+ {
+  "id": 53,
+  "userName": "jorge",
+  "surname": "Arias",
+  "email": "jor@arias.com",
+  "address": "pascal 15",
+  "celular": "1564",
+  "password": "123456",
+  "rep-contraseña": "123456"
+ },
+ {
+  "id": 54,
+  "userName": "Agustina",
+  "surname": "Alfonso",
+  "email": "juan@pedro.com.ar",
+  "address": "Goethe 1898",
+  "celular": "351564564",
+  "password": "123456",
+  "rep-contraseña": "123456"
  }
 ]
