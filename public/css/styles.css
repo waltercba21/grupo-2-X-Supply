@@ -1038,12 +1038,15 @@ article {
 
 .feedback {
     color: #d90429 ;
-    margin-top: 5px;
+    margin-top: 2px;
+    margin-bottom: 2px;
     padding-top: 2px;
+    padding-bottom: 10px;
     font-size: 1.5rem;
     border-style: solid;
     border-color: #d90429;
     border-width: thin;
+
 
 }
 

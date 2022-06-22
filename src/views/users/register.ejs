@@ -17,45 +17,73 @@
     <div class= "bloque_registro">
       <img src="/images/foto9.jpg" alt="suplementos" class="product_img">
       <div class= "registro">
-        <% if(locals.errors) {
-          errors.forEach (error => { %> 
-            <p class="feedback"> <%= error.msg %> </p>
-       <% })   
-       }%>
-        <form action="/users/register" method="POST" enctype="multipart/form-data">
+         <form  method="POST" action="/users/register" enctype="multipart/form-data">
        
 
-        <label> Imagen de Perfil</label>
-        <input type="file" name="imagenUsuario" />
+        <label for="imagenUsuario"> Imagen de Perfil</label>
+        <input type="file" name="imagenUsuario" id= "imagenUsuario" />
+        <% if (locals.errors && errors.imagenUsuario) { %>
+          <div class="feedback">
+            <%= errors.imagenUsuario.msg %> 
+          </div>
+         
+        <% } %>
+     
           
         
         <label for="userName"></label>
-        <input type="text" name="userName" placeholder = "Nombre" value="<%= locals.old && old.useName ? old.userName : '' %>"/>  
+        <input type="text" name="userName" placeholder = "Nombre" />
+        <% if (locals.errors && errors.userName) { %>
+          <div class="feedback">
+            <%= errors.userName.msg %> 
+          </div>
+         
+        <% } %>
+       
           
 
         <label for="surname"></label>
-        <input type="text"  name="surname" placeholder="Apellido" value="<%= locals.old && old.surname ? old.surname: '' %>"/> 
+        <input type="text"  name="surname" placeholder="Apellido" /> 
+        <% if (locals.errors && errors.surname) { %>
+          <div class="feedback">
+            <%= errors.surname.msg %> 
+          </div>
+         
+        <% } %>
+     
        
 
         <label for="email"></label>
-        <input type="email"  name="email" placeholder="E-Mail" value="<%= locals.old && old.email? old.email: '' %>" />
-        
+        <input type="email"  name="email" placeholder="E-Mail" />
+        <% if (locals.errors && errors.email) { %>
+          <div class="feedback">
+            <%= errors.email.msg %> 
+          </div>
+         
+        <% } %>
+     
 
         
 
         <label for="address"></label>
-        <input type="text"  name="address" placeholder="Dirección" value="<%= locals.old && old.address ? old.address: '' %>"/>
-       
+        <input type="text"  name="address" placeholder="Dirección"/>
+      
+     
 
         <label for="celular"></label>
-        <input type="number"  name="celular" placeholder="Telefono" value="<%= locals.old && old.celular ? old.celular : '' %>"/>
+        <input type="number"  name="celular" placeholder="Telefono"/>
        
 
 
         <label for="password"></label>
-        <input type="password"  
-               name="password" 
-               placeholder="Contraseña" />
+        <input type="password" name="password" placeholder="Contraseña"  />
+        <% if (locals.errors && errors.password) { %>
+          <div class="feedback">
+            <%= errors.password.msg %> 
+          </div>
+         
+        <% } %>
+     
         
 
         <label for="rep-contraseña"></label>
@@ -78,7 +106,7 @@
     </div>
   </main>
 
-<!------------Footer------------>
+
 <footer>
   <%- include('./../partials/footer') %>
 </footer>

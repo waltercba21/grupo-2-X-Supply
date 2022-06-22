@@ -7,7 +7,7 @@
 const fs= require("fs");
 
 const User = {
-    
+     
     fileName : '../src/data/usuarios.json',
     
     //Metodo para traer y poder leer los archivos JSON. 
@@ -16,7 +16,7 @@ const User = {
     },
     //Metodo para generar un ID
     generateId: function(){ 
-        //SI tengo un usuario en el array, entonces sumale 1 al ultimo numero
+        //Si tengo un usuario en el array, entonces sumale 1 al ultimo numero
         let allUsers = this.findAll();
         let lastUser = allUsers.pop();
         if (lastUser){
@@ -43,7 +43,7 @@ const User = {
         return userFound;
     },
     //Crear un nuevo usuario
-    create: function (userData){
+    create: function (userData){ 
         let allUsers = this.findAll();
         let newUser = {
             id: this.generateId(),

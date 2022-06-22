@@ -4,6 +4,7 @@ const path = require ('path');
 
 const validation = [
     body('userName').notEmpty().withMessage('Tienes que escribir un nombre'),
+    body('surname').notEmpty().withMessage('Tienes que escribir un apellido'),
     body('email').notEmpty().withMessage('Tienes que escribir un correo electronico').bail()
     .isEmail().withMessage('Debes escribir un formato de correo válido'),
     body('password').notEmpty().withMessage('Tienes que escribir una contraseña'),
@@ -19,7 +20,7 @@ const validation = [
                 throw new Error ( 'Las extensiones de archivo permitidas son ${acceptedExtension.join (',')}');
             }
         }
-        return true
+        return true 
     }) 
 ] 
 
