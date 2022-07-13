@@ -1,9 +1,9 @@
-const fs = require ('fs')
-
-const path = require('path')
+const fs = require ('fs');
+let db = require('../database/models');
+const path = require('path');
 const productsFilePath = path.join(__dirname, "../data/productos.json");
 
-let products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'))
+let products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 
 const productsController= {
    productCart: (req, res) => {
@@ -99,6 +99,6 @@ res.render ('./products/products', {products})
 
 
 
-}
+};
 
 module.exports = productsController;

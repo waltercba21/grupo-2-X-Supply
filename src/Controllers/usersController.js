@@ -1,7 +1,7 @@
 const bcryptjs = require ('bcryptjs');
 const {validationResult} = require ('express-validator');
 const User = require ('../../models/User');
-
+let db = require('../database/models');
 const usersController = {
    
    register: (req, res) => {
@@ -112,6 +112,6 @@ const usersController = {
       });
    }
 
-}
+};
 
 module.exports= usersController;
