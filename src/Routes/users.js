@@ -11,7 +11,7 @@ const validation = require ('../middlewares/validateRegisterMiddleware');
 router.get ('/login', usersController.login);
 
 //Procesamiento Formulario Login
-router.post ('/login',validation, usersController.loginProcess);
+router.post ('/login', validation, usersController.loginProcess);
 
 //Formulario Registro
 router.get ('/register', usersController.register);

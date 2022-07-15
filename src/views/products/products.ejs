@@ -19,19 +19,17 @@
       <h3 class="offers">TODOS LOS PRODUCTOS</h3>
       <div class="section-cards">
     
-        <%products.forEach(function(product){
-            
-            %>
+        <%products.forEach(function(products){%>
         <div class="card">
     
           <div class="imgBox">
-            <img src="images/productos/<%=product.imagen%>" alt="" class="product-img">
+            <img src="images/productos/<%=products.image%>" alt="" class="product-img">
           </div>
     
           <div class="contentBox">
-            <h3><%=product.nombre%></h3>
-            <h2 class="price"><%=product.precio%></h2>
-            <a href="/products/productDetail/<%=product.id%>" class="buy">COMPRAR</a>
+            <h3><%=products.name%></h3>
+            <h2 class="price"><%=products.price%></h2>
+            <a href="/products/productDetail/<%=products.idproducts%>" class="buy">COMPRAR</a>
           </div>
     
     

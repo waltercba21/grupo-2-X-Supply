@@ -32,7 +32,7 @@ module.exports = function (sequelize, dataTypes){
 
     //Definimos las asociaciones
     order.associate = function(models){
-        order.hasMany(models.Order_details, {
+        order.hasMany(models.orderDetail, {
             as: 'orderDetail',
             foreignKey: 'order_id'
         });

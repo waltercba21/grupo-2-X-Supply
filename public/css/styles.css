@@ -994,6 +994,24 @@ article {
     box-shadow: 0px 0px 15px rgba(189, 189, 189, 0.52);
 }
 
+.crearProductos select{
+    display: flex;
+    margin: 2% 0;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 10rem 1rem 1rem;
+    font-size: 14px;
+    border-width: 0px;
+    border-color: #ffffff;
+    background-color: #FFFFFF;
+    color: #000000;
+    border-style: solid;
+    border-radius: 4px;
+    box-shadow: 0px 0px 15px rgba(189, 189, 189, 0.52);
+}
+
+
 .crearProductos h3{
     font-size: 3rem;
     margin-top: 2%;

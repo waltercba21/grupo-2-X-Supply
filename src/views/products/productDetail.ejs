@@ -15,18 +15,18 @@
   <main>
     <section class="productDetail">
       <div class="img-detail">
-        <img src="../../images/productos/<%=product.imagen%>" alt="" />
+        <img src="../../images/productos/<%=product.image%>" alt="" />
       </div>
 
       <div class="detail">
         <div class="detail-title">
-          <h3><%=product.nombre%></h3>
-          <h6><%=product.marca%></h6>
+          <h3><%=product.name%></h3>
+          <h6><%=product.brand%></h6>
         </div>
         <div>
-          <p><strong>Sabor:</strong> Cookies & Cream</p> 
-          <p><strong>Peso:</strong> 5lbs</p>
-          <p><strong>Precio:</strong><span class="price"><%=product.precio%></span></p>
+          <p><strong>Sabor:</strong> <%=product.taste%></p> 
+          <p><strong>Peso:</strong> <%=product.weight%></p>
+          <p><strong>Precio:</strong><span class="price"><%=product.price%></span></p>
 
           <p>3 cuotas sin interés de $0</p>
 
@@ -48,22 +48,13 @@
       <div class="descripcion">
         <h3>DESCRIPCION</h3>
         <span>Marca</span>
-        <p><%=product.marca%></p>
-        <span>Tipo de suplemento</span>
-        <p>Proteína</p>
-        <span>Formato</span>
-        <p>Polvo</p>
-        <span>Tipo de envase</span>
-        <p>Pote</p>
+        <p><%=product.brand.name%></p>
+        <span>Categoría</span>
+        <p><%=product.category.name%></p>
         <span>Modo de uso</span>
-        <p>
-          <%=product.descripcion%>
-        </p>
+        <p><%=product.utility%></p>
         <span>Objetivos</span>
-        <p>
-          Desarrollo muscular Recuperación Crecimiento Reparación de tejidos
-          Estructura corporal Equilibrio interno
-        </p>
+        <p><%=product.purpose%></p>
       </div>
     </section>
   </main>

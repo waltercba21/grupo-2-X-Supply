@@ -5,8 +5,11 @@ let db = require('../database/models');
 const usersController = {
    
    register: (req, res) => {
-      res.render ('./users/register') 
- },
+      db.User.findAll()
+		.then(function(users){
+			res.render ('./users/register', {users:users})
+		}) 
+   },
    processRegister: (req,res) =>{
    const resultValidation = validationResult(req);
    console.log(resultValidation);

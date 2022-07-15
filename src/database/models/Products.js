@@ -29,7 +29,7 @@ module.exports = function (sequelize, dataTypes){
         category_id: {
             type: dataTypes.INTEGER
         },
-        use: {
+        utility: {
             type: dataTypes.STRING
         },
         purpose: {
@@ -54,14 +54,11 @@ module.exports = function (sequelize, dataTypes){
             as: 'brand',
             foreignKey: 'brand_id'
         });
-        product.belongsToMany(models.Categories, {
-            as: 'categories',
-            trought: 'product_categories',
-            foreignKey: 'product_id',
-            otherKey: 'category_id',
-            timestamps: false
+        product.belongsTo(models.Category, {
+            as: 'category',
+            foreignKey: 'category_id',
         });
-        product.hasMany(models.Order_details, {
+        product.hasMany(models.orderDetail, {
             as: 'orderDetail',
             foreignKey: 'product_id'
         });

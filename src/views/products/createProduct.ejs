@@ -17,25 +17,40 @@
     <div class="crearProductos">
       <h3 class="">Crear Productos</h3>
       <form action="./products/createProduct" method="POST" enctype="multipart/form-data" name="" class="">
-        <input type="text" placeholder="Marca" class="" name="marca" required/>
-      <br>
-        <input type="text" placeholder="Nombre del producto" name="nombre" class="" required/>
-      <br>
-        
-        <input type="text" placeholder="Precio Regular" name="precio" class="" required/>
-      <br>
-        
+        <input type="text" placeholder="Nombre del producto" name="name" class="" required/>
+        <br>
+        <select name="brand">
+          <% for (let i = 0; i < product.length; i++){ %>
+            <option value="<%=product[i].brand.id%>">
+              <%=product[i].brand.name%>
+            </option>
+          <% } %>
+        </select>
+        <br>
+        <input type="text" placeholder="Sabor" class="" name="taste" required/>
+        <br>
+        <input type="text" placeholder="Peso" class="" name="weight" required/>
+        <br>
+        <input type="text" placeholder="Precio Regular" class="" name="price" required/>
+        <br>
+        <input type="text" placeholder="Cantidad" class="" name="quantity" required/>
+        <br>
+        <select name="category">
+          <% for (let i = 0; i < product.length; i++){ %>
+            <option value="<%=product[i].category.id%>">
+              <%=product[i].category.name%>
+            </option>
+          <% } %>
+        </select>
+        <br>
+        <input type="text" placeholder="Modo de Uso" class="" name="utility" required/>
+        <br>
+        <input type="text" placeholder="Objetivo" class="" name="purpose" required/>
+        <br>
         <label for="imagenProducto" >Imagen del producto</label>
-        <input id="imagenProducto" type="file" name="imagen" accept="jpg, png, jpeg" class="" multiple required/>
-      <br>
-        <label for="descripcion" class="desc"> Descripción:</label>
-      <br>
-        <textarea name="descripcion" id="descripcion" class=""> Descripción del producto</textarea>
-      <br>
-        <input type="number" placeholder="Stock" name="stock" class="" required/>
-      <br/>
-      <input type="text" placeholder="Categoria" class="" name="categoria" required/>
-      <br/>
+        <input id="imagenProducto" type="file" name="image" accept="jpg, png, jpeg" class="" multiple required/>
+        <br>
+
         <button type="submit" class="btnGreen">Guardar</button>
         <button type="reset" class="btn">Reset</button>
       </form>

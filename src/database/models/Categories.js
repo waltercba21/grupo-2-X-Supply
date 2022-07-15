@@ -25,7 +25,7 @@ module.exports = function (sequelize, dataTypes){
     category.associate = function(models){
         category.belongsToMany(models.Product, {
             as: 'products',
-            trought: 'product_categories',
+            through: 'product_categories',
             foreignKey: 'category_id',
             otherKey: 'product_id',
             timestamps: false
