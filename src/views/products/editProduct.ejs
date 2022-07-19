@@ -17,37 +17,48 @@
   <div class="containerAdm"> 
 
     <div class="crearProductos">
-      <h3 class="">EDITAR <%= productToEdit.id%></h3>
-      <form method="POST" action="/editProduct/<%= productToEdit.id %>?_method=PUT" enctype="multipart/form-data">
-        
-        <input type="text" placeholder="Marca" class="" name="marca" value="<%= productToEdit.marca%>" required/>
-      <br>
-        <input type="text" placeholder="Nombre del producto" name="nombre" value="<%= productToEdit.nombre%>" class="" required/>
-      <br>
-        <input type="text" placeholder="Precio" name="precio" value="<%= productToEdit.precio%>" class="" required/>
-      <br>
-        <label for="imagenProducto" class="cp-tituloSeccion">Imagen del producto</label>
-         <input id="imagenProducto" type="file" name="imagen" accept="jpg, png, jpeg" class="" multiple/> 
-      <br>
-        <label for="descripcion" class="desc"> Descripción:</label>
-      <br>
-        <textarea name="descripcion" id="descripcion" value="<%= productToEdit.descripcion%>" class=""> Descripción del producto</textarea>
-      <br>
-        <input type="number" placeholder="Stock"  name="stock" class="" required/>
-      <br/>
-      <br/>
-        <button type="submit" class="btnGreen">Editar</button>
-
-        
-        
-      </form>
-      <form
-          action="/editProduct/<%= productToEdit.id %>?_method=DELETE"
-          method="POST"
-          enctype="multipart/form-data"
-        >
+      <h3 class="">EDITAR PRODUCTO</h3>
+      <form action="./<%= product.idproducts%>?_method=PUT" method="POST" enctype="multipart/form-data">
+        <input type="text" placeholder="Nombre del producto" name="name" value="<%= product.name%>" class="" required/>
+        <br>
+        <select name="brand">
+          <% for (let i = 0; i < brands.length; i++){ %>
+            <option value="<%=brands[i].idbrands%>">
+              <%=brands[i].name%>
+            </option>
+          <% } %>
+        </select>
+        <br>
+        <input type="text" placeholder="Sabor" class="" name="taste" value="<%= product.taste%>" required/>
+        <br>
+        <input type="text" placeholder="Peso" class="" name="weight" value="<%= product.weight%>" required/>
+        <br>
+        <input type="text" placeholder="Precio Regular" class="" name="price" value="<%= product.price%>" required/>
+        <br>
+        <input type="text" placeholder="Cantidad" class="" name="quantity" value="<%= product.quantity%>" required/>
+        <br>
+        <select name="category">
+          <% for (let i = 0; i < category.length; i++){ %>
+            <option value="<%=category[i].idcategories%>">
+              <%=category[i].name%>
+            </option>
+          <% } %>
+        </select>
+        <br>
+        <input type="text" placeholder="Modo de Uso" class="" name="utility" value="<%= product.utility%>" required/>
+        <br>
+        <input type="text" placeholder="Objetivo" class="" name="purpose" value="<%= product.purpose%>" required/>
+        <br>
+        <label for="imagenProducto" >Imagen del producto</label>
+        <input id="imagenProducto" type="file" name="image" accept="jpg, png, jpeg" class="" multiple/>
+        <br>
+        <button type="submit" class="btn">Editar</button>
+      </form>  
+    </div>  
+    <div class="crearProductos">
+      <form action="./<%= product.idproducts%>?_method=DELETE" method="POST" enctype="multipart/form-data">
         <button type="submit" class="btn">Eliminar</button>
-        </form>
+      </form>
     </div>
   </div>
 

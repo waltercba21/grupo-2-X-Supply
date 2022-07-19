@@ -7,37 +7,29 @@ let products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 
 const productsController= {
 	productCart: (req, res) => {
-    	res.render ('./products/productCart')
- },
+		res.render ('./products/productCart')
+	},
 
 	productDetail: (req, res) => {
 		db.Product.findByPk(req.params.id, {
 			include: [{association: 'brand'}, {association: 'category'}]
 		})
-			.then(function(product){
-				res.render('./products/productDetail', {product:product})
-			})
-
-		/* let id = req.params.id;
-		let product = products.find((product) => product.id == id);
-		res.render ('./products/productDetail', {product}) */
-
- },
+		.then(function(product){
+			res.render('./products/productDetail', {product:product})
+		})
+	},
 
 	createProduct: (req, res) => {
-		db.Product.findAll({
-			include: [
-				{association: 'brand'},
-				{association: 'category'}
-			]
-		})
-		.then(function(product){
-			res.render ('./products/createProduct', {product:product})
-		})
-},
+		let brands = db.Brand.findAll();
+		let category = db.Category.findAll();
+		Promise.all([brands, category])
+		.then(function([brands, category]) {
+			res.render ('./products/createProduct', {brands:brands, category:category})
+		});
+	},
 
 	store: (req, res) => {
-    	let image;
+		let image;
 		if(req.files[0] !=undefined ) {
 			image = req.files[0].filename;
 		}
@@ -52,81 +44,71 @@ const productsController= {
 			price: req.body.price,
 			quantity: req.body.quantity,
 			category_id: req.body.category,
-			use: req.body.use,
+			utility: req.body.utility,
 			purpose: req.body.purpose,
 			image: image
 		})
-		/* let newProducto = {
-			id: products[products.length -1].id + 1,
-			...req.body,
-			imagen: image,
-		};
-
-		products.push(newProducto);
-		fs.writeFileSync(productsFilePath, JSON.stringify(products, null, " "));
-		res.redirect("/products"); */
-},
+		.then(function(){
+			res.redirect("/products")
+		});
+	},
 
 	editProduct: (req, res) => {
-		let id = req.params.id;
-		let productToEdit = products.find((product) => product.id == id);
-		res.render ('./products/editProduct', {productToEdit})
-},
+		let productToEdit =	db.Product.findByPk(req.params.id);
+		let brands = db.Brand.findAll();
+		let category = db.Category.findAll();
+		Promise.all([productToEdit, brands, category])
+		.then(function([product, brands, category]) {
+			res.render ('./products/editProduct', {product:product, brands:brands, category:category})
+		});
+	},
 
 	editModif: (req,res) => {
-		let id = req.params.id; 
-		let producToEdit = products.find(producto => producto.id == id); 
-		let image 
-
-		if (req.files[0] != undefined) {
+		let image;
+		if(req.files[0] !=undefined ) {
 			image = req.files[0].filename;
-		} else {
-			image = producToEdit.imagen;
 		}
-
-	producToEdit = {
-			id: producToEdit.id,
-			...req.body,
-			imagen: image
+		else {
+			image = req.files.image;
 		}
-
-		let newProducts = products.map(products => {
-			if (products.id == producToEdit.id) {
-				return products = {...producToEdit}; 
+		db.Product.update({
+			name: req.body.name,
+			brand_id: req.body.brand,
+			taste: req.body.taste,
+			weight: req.body.weight,
+			price: req.body.price,
+			quantity: req.body.quantity,
+			category_id: req.body.category,
+			utility: req.body.utility,
+			purpose: req.body.purpose,
+			image: image
+		}, {
+			where: {
+				idproducts: req.params.id
 			}
-			return products; 
 		})
-
-		
-
-		fs.writeFileSync(productsFilePath, JSON.stringify(newProducts, null, ' '));
-		
-		res.redirect("/products");
+		.then(function(){
+			res.redirect("/products")
+		});
+	},
 	
-
-},
-	delete: (req, res) => {
-
-		
-		let id = req.params.id;
-		
-		let productToDelete = products.filter(product => product.id != id);
-
-
-		fs.writeFileSync(productsFilePath, JSON.stringify(productToDelete, null, ' '));
-		res.redirect('/products')
-
-},
+	delete: function (req, res) {
+		db.Product.destroy({
+			where: {
+				idproducts: req.params.id
+			}
+		})
+		.then(function(){
+			res.redirect('/products')
+		});
+	},
 
 	list: (req, res) => {
 		db.Product.findAll()
-			.then(function(products){
-				res.render ('./products/products', {products:products})
+		.then(function(products){
+			res.render ('./products/products', {products:products})
 		})
-}
-
-
-
+	}
 };
 
 module.exports = productsController;

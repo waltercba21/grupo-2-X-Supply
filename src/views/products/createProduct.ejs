@@ -16,13 +16,13 @@
 
     <div class="crearProductos">
       <h3 class="">Crear Productos</h3>
-      <form action="./products/createProduct" method="POST" enctype="multipart/form-data" name="" class="">
+      <form action="./createProduct" method="POST" enctype="multipart/form-data" name="" class="">
         <input type="text" placeholder="Nombre del producto" name="name" class="" required/>
         <br>
         <select name="brand">
-          <% for (let i = 0; i < product.length; i++){ %>
-            <option value="<%=product[i].brand.id%>">
-              <%=product[i].brand.name%>
+          <% for (let i = 0; i < brands.length; i++){ %>
+            <option value="<%=brands[i].idbrands%>">
+              <%=brands[i].name%>
             </option>
           <% } %>
         </select>
@@ -36,9 +36,9 @@
         <input type="text" placeholder="Cantidad" class="" name="quantity" required/>
         <br>
         <select name="category">
-          <% for (let i = 0; i < product.length; i++){ %>
-            <option value="<%=product[i].category.id%>">
-              <%=product[i].category.name%>
+          <% for (let i = 0; i < category.length; i++){ %>
+            <option value="<%=category[i].idcategories%>">
+              <%=category[i].name%>
             </option>
           <% } %>
         </select>

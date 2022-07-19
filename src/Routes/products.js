@@ -29,9 +29,6 @@ router.post('/createProduct', uploadFile.any('image'), productsController.store)
 //---------LISTAR PRODUCTOS-------//
 router.get('/', productsController.list);
 
-//---------BORRAR PRODUCTOS-------//
-router.delete('/editProduct/:id', productsController.delete)
-
 //---------DETALLE DE PRODUCTOS-------//
 router.get('/productDetail/:id', productsController.productDetail);
 
@@ -39,5 +36,7 @@ router.get('/productDetail/:id', productsController.productDetail);
 router.get('/editProduct/:id', productsController.editProduct);
 router.put('/editProduct/:id', uploadFile.any(), productsController.editModif)
 
+//---------BORRAR PRODUCTOS-------//
+router.delete('/editProduct/:id', productsController.delete)
 
 module.exports = router;
