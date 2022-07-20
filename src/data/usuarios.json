@@ -34,5 +34,17 @@
   "rep-contraseña": "123456",
   "terminos": "on",
   "imagenUsuario": "user-1655874616706.jpg"
+ },
+ {
+  "id": 4,
+  "userName": "Fernando",
+  "surname": "Ruggiero",
+  "email": "fernando.ruggiero06@gmail.com",
+  "address": "Padre Ghio 15",
+  "celular": "2364334214",
+  "password": "$2a$10$oogHTmfDM42Pq6tK/h9XTeYUvsTcG3xNJFMCGug.6pEVo/TBKOf1a",
+  "rep-contraseña": "ferseis",
+  "terminos": "on",
+  "imagenUsuario": "user-1658203839525.jpg"
  }
 ]

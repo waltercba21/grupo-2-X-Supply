@@ -1,37 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <!------------Head------------>
+  <!------------Head------------>
+  <head>
         <%- include('./../partials/head') %>
-        </head>
-        
-<body>
+  </head>
+  
+  <body>
+    <!------------Header------------>
     <header>
-            <!------------Header------------>
-            <%- include('./../partials/header')%>
-          </header> 
-          
-          <div class="containerUser" style="margin-top: 40px;">
-            <div class="row"> 
-              <div class=" col-md-3">
-          
-          <h1> Bienvenido a tu cuenta <%= locals.userName %>  </h1>
-
-          <img src="/public/images/Usuarios/ <%= locals.imagenUsuario %> " >
-          <br>
-          <br>
-          
-          <div class="alert alert-succes">
-          
+      <%- include('./../partials/header')%>
+    </header> 
+    
+    <main>
+      <section class="containerUser">
+        <h1> Bienvenido a tu cuenta <%= users.name + ' ' + users.lastname %>  </h1>
+        <div class="img-detail">
+          <img src="../../images/usuarios/<%=users.image%>" alt="" />
+        </div>
+  
+        <div class="detail">
+          <div class="detail-title">
+            <h3><%=users.name + ' ' + users.lastname%></h3>
           </div>
-          
-
-
-            </div>
-         </div>
-      </div>
-    </form>
-          <!------------Footer------------>
+          <div>
+            <p><strong>Email:</strong> <%=user.email%></p> 
+            <p><strong>Dirección:</strong> <%=user.address%></p>
+            <p><strong>Teléfono:</strong><span class="price"><%=user.phone%></span></p>
+          </div>
+        </div>
+      </section>
+    </main>
+    
+<!------------Footer------------>
 <footer>
     <%- include('./../partials/footer') %>
   </footer>

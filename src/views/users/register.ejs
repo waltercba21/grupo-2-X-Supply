@@ -20,33 +20,33 @@
          <form  method="POST" action="/users/register" enctype="multipart/form-data">
        
 
-        <label for="imagenUsuario"> Imagen de Perfil</label>
-        <input type="file" name="imagenUsuario" id= "imagenUsuario" />
-        <% if (locals.errors && errors.imagenUsuario) { %>
+        <label for="image"> Imagen de Perfil</label>
+        <input type="file" name="image" id= "image" />
+        <% if (locals.errors && errors.image) { %>
           <div class="feedback">
-            <%= errors.imagenUsuario.msg %> 
+            <%= errors.image.msg %> 
           </div>
          
         <% } %>
      
           
         
-        <label for="userName"></label>
-        <input type="text" name="userName" placeholder = "Nombre" />
-        <% if (locals.errors && errors.userName) { %>
+        <label for="name"></label>
+        <input type="text" name="name" placeholder = "Nombre" />
+        <% if (locals.errors && errors.name) { %>
           <div class="feedback">
-            <%= errors.userName.msg %> 
+            <%= errors.name.msg %> 
           </div>
          
         <% } %>
        
           
 
-        <label for="surname"></label>
-        <input type="text"  name="surname" placeholder="Apellido" /> 
-        <% if (locals.errors && errors.surname) { %>
+        <label for="lastname"></label>
+        <input type="text"  name="lastname" placeholder="Apellido" /> 
+        <% if (locals.errors && errors.lastname) { %>
           <div class="feedback">
-            <%= errors.surname.msg %> 
+            <%= errors.lastname.msg %> 
           </div>
          
         <% } %>
@@ -70,8 +70,8 @@
       
      
 
-        <label for="celular"></label>
-        <input type="number"  name="celular" placeholder="Telefono"/>
+        <label for="phone"></label>
+        <input type="number"  name="phone" placeholder="Telefono"/>
        
 
 
@@ -86,8 +86,8 @@
      
         
 
-        <label for="rep-contraseña"></label>
-        <input type="password"  name="rep-contraseña" placeholder="Repetir Contraseña"/>
+        <label for="repassword"></label>
+        <input type="password"  name="repassword" placeholder="Repetir Contraseña"/>
 
         
 

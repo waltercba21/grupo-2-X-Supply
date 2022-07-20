@@ -3,12 +3,12 @@ const path = require ('path');
 
 
 const validation = [
-    body('userName').notEmpty().withMessage('Tienes que escribir un nombre'),
-    body('surname').notEmpty().withMessage('Tienes que escribir un apellido'),
+    body('name').notEmpty().withMessage('Tienes que escribir un nombre'),
+    body('lastname').notEmpty().withMessage('Tienes que escribir un apellido'),
     body('email').notEmpty().withMessage('Tienes que escribir un correo electronico').bail()
     .isEmail().withMessage('Debes escribir un formato de correo válido'),
     body('password').notEmpty().withMessage('Tienes que escribir una contraseña'),
-    body('imagenUsuario').custom((value, {req}) => {
+    body('image').custom((value, {req}) => {
         let file = req.file;
         let acceptedExtension = ['.jpg', '.png', '.gif'];
 
