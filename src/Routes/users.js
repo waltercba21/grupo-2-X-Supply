@@ -8,7 +8,7 @@ const validation = require ('../middlewares/validateRegisterMiddleware');
 router.get ('/login', usersController.login);
 
 //Procesamiento Formulario Login
-router.post ('/login', usersController.loginProcess);
+router.post ('/login', upload.single("image"), usersController.loginProcess);
 
 //Formulario Registro
 router.get ('/register', usersController.register);
@@ -17,7 +17,7 @@ router.get ('/register', usersController.register);
 router.post('/register', upload.single("image"), validation, usersController.processRegister)
 
 //Perfil del Usuario
-router.get ('/userProfile/:id', usersController.profile);
+router.get ('/profile/:id', usersController.profile);
 
 //Listar Usuarios
 router.get('/', usersController.list)
