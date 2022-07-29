@@ -4,6 +4,7 @@ const User = require ('../../models/User');
 let db = require('../database/models');
 
 
+
 const usersController = {
    register: (req, res) => {
       db.User.findAll()
@@ -50,62 +51,42 @@ const usersController = {
    },
 
    login: (req, res) => {
-      res.render ('./users/login')
+      db.User.findAll()
+		.then(function(users){
+			res.render ('./users/login', {users:users})
+		})
    },
 
-   loginProcess: async (req,res) => {
-      console.log(req.body);
-      let userToLogin = await db.User.findOne({
+   loginProcess: (req,res) => {      
+      let userToLogin = db.User.findOne({
          where: {
             email: req.body.email
          }
       })
-      if (userToLogin){
-         bcryptjs.compareSync (req.body.password, userToLogin.password)
-            res.render ('./users/userProfile', {user:userToLogin})
-      }else{
-         res.render ('./users/login', {user:userToLogin})
+      .then((userToLogin) => {
+         if (userToLogin){
+            let passOk = bcryptjs.compareSync (req.body.password, userToLogin.password)
+         if (passOk){
+            delete userToLogin.password;
+            req.session.userLogged = userToLogin;
+            return res.redirect('./profile/' + userToLogin.idusers)
+         }else {
+            return res.render('./users/login', {
+               errors: {
+                   email: {
+                       msg: 'Credenciales inválidas'
+                   }
+               }
+           });
          }
-   },
-
-
-
-
-     /*  db.User.findOne(req.body.email)
-      .then(function(user){
-         if (req.body.email === user.email){
-            bcryptjs.compareSync (req.body.password, user.password)
-               res.render ('./users/userProfile', {user:user})
-         }else{
-            res.render ('./users/login', {user:user})
          }
       })
-   }, */
-
-      /* if (users[i].email == req.body.email){
-               if (bcryptjs.compareSync (req.body.password, users[i].password)){
-                  let usuarioALoguearse = users [i];
-                  break;
-               }
-            }
-         }
-         if (usuarioALoguearse == undefined) {
-            return res.render ('./users/login', {errors: [
-               {msg: 'Credenciales Invalidas'}, {users:users}
-            ]});
-         }
-         req.session.usuarioLogueado = usuarioALoguearse;
-         }else{
-            return res.render ('./users/userProfile',{
-               errors:errors.errors}, {users:users});
-         } */
+   },
 
    profile: (req, res) => {
 		db.User.findByPk(req.params.id)
 		.then(function(users){
-			res.render('./users/userProfile/'+ req.params.id, {users:users}, {
-            user: req.session.userLogged
-         })
+			res.render('./users/profile', {users:users})
 		})
 	},
 
