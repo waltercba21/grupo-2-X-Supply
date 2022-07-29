@@ -16,8 +16,10 @@
 
     <div class="crearProductos">
       <h3 class="">Crear Productos</h3>
-      <form action="./createProduct" method="POST" enctype="multipart/form-data" name="" class="">
-        <input type="text" placeholder="Nombre del producto" name="name" class="" required/>
+      
+      <form action="./createProduct" method="POST" enctype="multipart/form-data" name="" id="productForm">
+        <ul class="errores"></ul>
+        <input type="text" placeholder="Nombre del producto" name="name" id="productName" class="" required/>
         <br>
         <select name="brand">
           <% for (let i = 0; i < brands.length; i++){ %>
@@ -43,7 +45,7 @@
           <% } %>
         </select>
         <br>
-        <input type="text" placeholder="Modo de Uso" class="" name="utility" required/>
+        <input type="text" placeholder="Modo de Uso" id="productDesc" name="utility" required/>
         <br>
         <input type="text" placeholder="Objetivo" class="" name="purpose" required/>
         <br>
@@ -63,7 +65,79 @@
   <footer>
     <%- include('./../partials/footer') %>
   </footer>
+  <script>
+window.onload = function () {
   
+  let name = document.querySelector("#productName");
+  let form = document.querySelector("#productForm");
+  let desc = document.querySelector("#productDesc");
+  let file = document.querySelector("#imagenProducto");
+  
+
+  name.focus();
+
+  form.addEventListener("submit", function (e) {
+    
+    let errors = [];
+
+    if (name.value == "") {
+      errors.push("El campo nombre es obligatorio");
+      name.classList.add("is-invalid");
+    }
+    if (name.value.length < 5 && name.value.length > 0) {
+      errors.push("Nombre muy corto");
+      name.classList.add("is-invalid");
+    } else {
+      name.classList.remove("is-invalid");
+      name.classList.add("is-valid");
+      
+    }
+
+    if (desc.value.length <20 && desc.value.length > 0) {
+      errors.push("Descripcion muy corta");
+      desc.classList.add("is-invalid");
+    } else {
+      desc.classList.remove("is-invalid");
+      desc.classList.add("is-valid");
+      
+    }
+    
+    let allowedExtensions = /(.jpg|.jpeg|.png|.gif)$/i;
+    let filePath = file.value;
+
+    if (!allowedExtensions.exec(filePath)) {
+      errors.push("Por favor usar una extension valida");
+      file.classList.add("is-invalid");
+    } else {
+      file.classList.remove("is-invalid");
+      file.classList.add("is-valid");
+    }
+    
+
+    
+
+    if (errors.length > 0) {
+      e.preventDefault();
+      
+      let errores = document.querySelector(".errores");
+      errores.classList.add("alert-warning");
+      errores.innerHTML = "";
+
+      for (let i = 0; i < errors.length; i++) {
+        let li = document.createElement("li");
+        li.innerHTML = errors[i];
+        errores.appendChild(li);
+      }
+    } else {
+      e.preventDefault()
+      alert("Usuario registrado");
+    }
+  });
+};
+
+  </script>
+
+
 </body>
 
 </html>

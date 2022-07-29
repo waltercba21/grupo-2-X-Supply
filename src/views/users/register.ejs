@@ -2,8 +2,8 @@
 <html lang="en">
 
 <head>
-<!------------Head------------>
-<%- include('./../partials/head') %>
+  <!------------Head------------>
+  <%- include('./../partials/head') %>
 </head>
 
 <body>
@@ -13,103 +13,189 @@
   </header>
 
   <main>
-     
-    <div class= "bloque_registro">
-      <img src="/images/foto9.jpg" alt="suplementos" class="product_img">
-      <div class= "registro">
-         <form  method="POST" action="/users/register" enctype="multipart/form-data">
-       
+    <div class="bloque_registro">
+      <img src="/images/foto9.jpg" alt="suplementos" class="product_img" />
+      <div class="registro">
+        <form id="registerForm" method="POST" action="/users/register" enctype="multipart/form-data">
+          <ul class="errores"></ul>
 
-        <label for="image"> Imagen de Perfil</label>
-        <input type="file" name="image" id= "image" />
-        <% if (locals.errors && errors.image) { %>
-          <div class="feedback">
-            <%= errors.image.msg %> 
+          <div class="formControl">
+            <label for="name"></label>
+            <input type="text" name="name" id="registerName" placeholder="Nombre" />
+            
+
+            <% if (locals.errors && errors.name) { %>
+              <div class="feedback">
+                <%= errors.name.msg %>
+              </div>
+              <% } %>
           </div>
-         
-        <% } %>
-     
-          
-        
-        <label for="name"></label>
-        <input type="text" name="name" placeholder = "Nombre" />
-        <% if (locals.errors && errors.name) { %>
-          <div class="feedback">
-            <%= errors.name.msg %> 
+          <div class="formControl">
+            <label for="lastname"></label>
+            <input type="text" name="lastname" id="registerLastName" placeholder="Apellido" />
+            <% if (locals.errors && errors.lastname) { %>
+              <div class="feedback">
+                <%= errors.lastname.msg %>
+              </div>
+
+              <% } %>
           </div>
-         
-        <% } %>
-       
-          
+          <div class="formControl">
+            <label for="email"></label>
+            <input type="email" name="email" id="registerEmail" placeholder="E-Mail" />
+            <% if (locals.errors && errors.email) { %>
+              <div class="feedback">
+                <%= errors.email.msg %>
+              </div>
 
-        <label for="lastname"></label>
-        <input type="text"  name="lastname" placeholder="Apellido" /> 
-        <% if (locals.errors && errors.lastname) { %>
-          <div class="feedback">
-            <%= errors.lastname.msg %> 
+              <% } %>
           </div>
-         
-        <% } %>
-     
-       
-
-        <label for="email"></label>
-        <input type="email"  name="email" placeholder="E-Mail" />
-        <% if (locals.errors && errors.email) { %>
-          <div class="feedback">
-            <%= errors.email.msg %> 
+          <div class="formControl">
+            <label for="address"></label>
+            <input type="text" name="address" id="registerAdress" placeholder="Dirección" />
           </div>
-         
-        <% } %>
-     
+          <div class="formControl">
+            <label for="phone"></label>
+            <input type="number" name="phone" id="registerPhone" placeholder="Telefono" />
+          </div>
 
-        
+          <div class="formControl">
+            <label for="password"></label>
+            <input type="password" name="password" id="registerPassword" placeholder="Contraseña" />
+            <% if (locals.errors && errors.password) { %>
+              <div class="feedback">
+                <%= errors.password.msg %>
+              </div>
 
-        <label for="address"></label>
-        <input type="text"  name="address" placeholder="Dirección"/>
+              <% } %>
+          </div>
+          <div class="formControl">
+            <label for="repassword"></label>
+            <input type="password" name="repassword" placeholder="Repetir Contraseña" />
+          </div>
+          <div class="formControl">
+          <label for="image"> Imagen de Perfil</label><br />
+          <input type="file" name="image" id="image" />
+          <% if (locals.errors && errors.image) { %>
+            <div class="feedback">
+              <%= errors.image.msg %>
+            </div>
+
+            <% } %>
+          </div>
       
-     
-
-        <label for="phone"></label>
-        <input type="number"  name="phone" placeholder="Telefono"/>
-       
-
-
-        <label for="password"></label>
-        <input type="password" name="password" placeholder="Contraseña"  />
-        <% if (locals.errors && errors.password) { %>
-          <div class="feedback">
-            <%= errors.password.msg %> 
-          </div>
-         
-        <% } %>
-     
-        
-
-        <label for="repassword"></label>
-        <input type="password"  name="repassword" placeholder="Repetir Contraseña"/>
-
-        
-
-        <div class="terminos">
-          <input type="checkbox" name="terminos"/>
-          <label for="terminos">Acepto los términos y condiciones</label>
-        </div>
-        
-        <p>
+      
         <button type="submit" class="btn">Registrar</button>
         <button type="reset" class="btn">Cancelar</button>
-        </p>
-        
+      
       </form>
     </div>
     </div>
   </main>
 
+  <footer>
+    <%- include('./../partials/footer') %>
+  </footer>
+  
+    <script>
 
-<footer>
-  <%- include('./../partials/footer') %>
-</footer>
+window.onload = function () {
+  let form = document.querySelector("#registerForm");
+  let name = document.querySelector("#registerName");
+  let lastName = document.querySelector("#registerLastName");
+  let email = document.querySelector("#registerEmail");
+  let adress = document.querySelector("#registerAdress");
+  let password = document.querySelector("#registerPassword");
+  let file = document.querySelector("#image");
 
+  name.focus();
+
+  form.addEventListener("submit", function (e) {
+    const reg =
+      /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    let errors = [];
+
+    if (name.value == "") {
+      errors.push("El campo nombre es obligatorio");
+      name.classList.add("is-invalid");
+    }
+    if (name.value.length < 1 && name.value.length > 0) {
+      errors.push("Nombre muy corto");
+      name.classList.add("is-invalid");
+    } else {
+      name.classList.remove("is-invalid");
+      name.classList.add("is-valid");
+      lastName.focus();
+    }
+
+    if (lastName.value == "") {
+      errors.push("El campo apellido es obligatorio");
+      lastName.classList.add("is-invalid");
+    }
+    if (lastName.value.length < 2 && lastName.value.length > 0) {
+      errors.push("Apellido muy corto");
+      lastName.classList.add("is-invalid");
+    } else {
+      lastName.classList.remove("is-invalid");
+      lastName.classList.add("is-valid");
+      email.focus();
+    }
+
+    if (reg.test(email.value) === false && email.value !== "") {
+      errors.push("El email no es valido");
+      email.classList.add("is-invalid");
+    }
+    if (email.value == "") {
+      errors.push("El campo email es obligatorio");
+      email.classList.add("is-invalid");
+    } else {
+      email.classList.remove("is-invalid");
+      email.classList.add("is-valid");
+      email.focus();
+    }
+
+    if (password.value == "") {
+      errors.push("El campo contraseña es obligatorio");
+      name.classList.add("is-invalid");
+    }
+    if (password.value.length < 8 && password.value.length > 0) {
+      errors.push("Contraseña muy corta");
+      password.classList.add("is-invalid");
+    } else {
+      password.classList.remove("is-invalid");
+      password.classList.add("is-valid");
+    }
+
+    let allowedExtensions = /(.jpg|.jpeg|.png|.gif)$/i;
+    let filePath = file.value;
+
+    if (!allowedExtensions.exec(filePath)) {
+      errors.push("Por favor usar una extension valida");
+      file.classList.add("is-invalid");
+    } else {
+      file.classList.remove("is-invalid");
+      file.classList.add("is-valid");
+    }
+
+    if (errors.length > 0) {
+      e.preventDefault();
+      let errores = document.querySelector(".errores");
+      errores.classList.add("alert-warning");
+      errores.innerHTML = "";
+
+      for (let i = 0; i < errors.length; i++) {
+        let li = document.createElement("li");
+        li.innerHTML = errors[i];
+        errores.appendChild(li);
+      }
+    } else {
+      alert("Usuario registrado");
+    }
+  });
+};
+
+    </script>
+  
 </body>
+
 </html>

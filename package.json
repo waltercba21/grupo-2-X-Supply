@@ -34,5 +34,6 @@
     "sequelize": "^6.20.1",
     "sequelize-cli": "^6.4.1",
     "side-channel": "^1.0.4"
-  }
+  },
+  "devDependencies": {}
 }
