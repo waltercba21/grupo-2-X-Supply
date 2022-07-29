@@ -109,7 +109,7 @@ window.onload = function () {
     let filePath = file.value;
 
     if (!allowedExtensions.exec(filePath)) {
-      errors.push("Por favor usar una extension valida");
+      errors.push("Por favor usar un archivo valido para la imagen");
       file.classList.add("is-invalid");
     } else {
       file.classList.remove("is-invalid");
@@ -132,8 +132,8 @@ window.onload = function () {
         errores.appendChild(li);
       }
     } else {
-      e.preventDefault()
-      alert("Usuario registrado");
+      
+      ;
     }
   });
 };
