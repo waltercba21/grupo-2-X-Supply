@@ -1038,27 +1038,54 @@ article {
 
 /* User Profile */
 
-.containerUser {
+.userContainer{
     display: flex;
     background-color: #fdfdfd;
     flex-direction: column;
-    justify-content: center;
-    margin: auto;
-    margin-top: 100%;
-    margin-bottom: 50%;
-    width: 95%;
+    margin-top: 10%;
+    margin-bottom: 30%;
+    width: 50%;
     box-shadow: 0px 0px 15px rgba(189, 189, 189, 0.52);
-    height: 200px;
-    padding-top: 100px;
-} 
+    margin-left: 20%;
+    text-align: center;
+    
+}
+
+.nombreUsuario{
+    font-size: 3rem;
+    
+    padding-bottom: 10%;
+}
+
+.imgUsuario{
+    width: 40%;
+    padding-top: 2%;
+    border-radius: 150px;
+    box-shadow: #757575;
+    transition: 300ms;
+    position: relative;
+    
+}
+
+.imgUsuario:hover{
+    transform: scale(1.15);
+}
+
+.userDetail{
+    
+    padding-top: 10%;
+    font-size: 2rem;
+    padding-bottom: 5%;
+    
+}
 
 .feedback {
     color: #d90429 ;
-    margin-top: 2px;
+    margin-top: 1px;
     margin-bottom: 2px;
     padding-top: 2px;
     padding-bottom: 10px;
-    font-size: 1.5rem;
+    font-size: 1.rem;
     border-style: solid;
     border-color: #d90429;
     border-width: thin;
