@@ -12,20 +12,20 @@
     </header> 
     
     <main>
-      <section class="containerUser">
-        <h1> Bienvenido a tu cuenta <%= users.name + ' ' + users.lastname %>  </h1>
-        <div class="img-detail">
-          <img src="../../images/usuarios/<%=users.image%>" alt="" />
+      <section class="userContainer">
+        <h1 class="nombreUsuario"> Bienvenido a tu cuenta <%= users.name + ' ' + users.lastname %>  </h1>
+        <div class="  ">
+          <img class = 'imgUsuario' src="../../images/usuarios/<%=users.image%>" alt="" />
         </div>
   
-        <div class="detail">
+        <div class="userDetail">
           <div class="detail-title">
             <h3><%=users.name + ' ' + users.lastname%></h3>
           </div>
           <div>
             <p><strong>Email:</strong> <%=users.email%></p> 
             <p><strong>Dirección:</strong> <%=users.address%></p>
-            <p><strong>Teléfono:</strong><span class="price"><%=users.phone%></span></p>
+            <p><strong>Teléfono:</strong><span><%=users.phone%></span></p>
           </div>
         </div>
       </section>
